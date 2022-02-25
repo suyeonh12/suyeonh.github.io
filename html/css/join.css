@@ -1,0 +1,84 @@
+#sec{ background-color: #fff070;}
+#sec form{
+  width:1080px;
+  margin: 0 auto;
+  padding: 50px 0 20px 0;
+}
+
+#sec form legend{
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#sec form p{
+  width: 500px;
+  margin: 0 auto;
+  line-height: 70px;
+  font-size: 23px;
+}
+
+#sec form p .join{
+  display: inline-block;
+  width: 107px;
+  text-indent: 10px;
+  line-height: 40px;
+}
+#sec form p small{
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+#sec form .join_btn{
+  display: block;
+  margin: 10px auto;
+  width: 60px;
+  height: 39px;
+  background-color: #ffd14e;
+  border: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select{
+  text-align: center;
+  background-color: #eee;
+  line-height: 35px;
+  width: 330px;
+  border: 0;
+}
+
+select{
+  height: 40px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{background-color: #000; color:#fff;}
+
+input[type=radio]:checked +label,
+input[type=checkbox]:checked +label{background-color: #000; color:#fff;}
+
+input[type=radio],
+input[type=checkbox]{background-color: #eee;}
+
+input, textarea, select{
+  font-size: 17px;
+}
+
+label{
+  background-color: #ddd;
+  text-align: center;
+  display: inline-block;
+  width: 85px;
+  height: 40px;
+  line-height: 40px;
+}
+label[for="IT"],
+label[for="none"] {margin: 0;}
+
+form textarea{
+  width: 400px;
+  display: block;
+  margin: 15px auto;
+  text-indent: 5px;}

@@ -1,0 +1,351 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family : 'Noto Sans KR', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ol,ul,dl{
+  list-style: none;
+}
+
+#header{
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.search{
+  width: calc(50% - 4px);
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.search #search_bar{
+  width: 80%;
+  line-height: 50px;
+  font-size: 18px;
+  text-indent: 15px;
+  border: solid 3px red;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.search .xi-search{
+  display: inline-block;
+  color: #fff;
+  background-color: red;
+  font-size: 28px;
+  padding: 12px;
+  border-radius: 40%;
+  box-shadow: 0px 4px 12px rgb(255 0 0 / 53%);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.search .often_search{}
+.often_search li{
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.often_search li a{
+  display: block;
+  font-size: 14px;
+  color: #777;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.event_banner{
+  display: inline-block;
+  width: calc(50% - 4px);
+  text-align: right;
+  vertical-align: middle;
+}
+.event_banner .event{
+  display: inline-block;
+  width: 60%;
+  margin-right: 40px;
+  text-align: left;
+}
+.event a{
+  display: block;
+  padding: 10px;
+  background-image: url(/img/event/mmo.png);
+}
+.event a span{
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+}
+.event a .event_con{
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+  margin-top: 16px;
+  vertical-align: middle;
+}
+.event_con::after{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-top: solid 1px #666;
+  border-right: solid 1px #666;
+  vertical-align: middle;
+}
+
+.event p{
+  width: 35%;
+  margin-left: 5px;
+}
+.event p span{
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(50% - 4px);
+}
+.evnt p .number{}
+.event .number::before{
+  position: relative;
+  display: inline-block;
+  content: "3";
+  font-weight: bold;
+  left: -5px;
+}
+.event .number::after{
+  position: relative;
+  right: -5px;
+  display: inline-block;
+  content: "15";
+  font-weight: bold;
+}
+.evnt p .pause{}
+.pause .xi-pause{
+  font-size: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.pause:before{
+  position: relative;
+  left: -5px;
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-left: solid 1px #000;
+  border-bottom: solid 1px #000;
+  cursor: pointer;
+}
+.pause:after{
+  position: relative;
+  right: -5px;
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-right: solid 1px #000;
+  border-top: solid 1px #000;
+  cursor: pointer;
+}
+
+#depth_1{
+  width: 1280px;
+  margin: 50px auto 200px;
+}
+.wrap{
+  position: relative;
+}
+
+#depth_1 .menu{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+#depth_1 input{
+  display: none;
+}
+#depth_1 label{
+  display: inline-block;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#depth_1 ul{
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  top: 70px;
+  left: 0;
+  z-index: 1;
+}
+#depth_1 ul li{
+  display: inline-block;
+  text-align: center;
+  width: 12%;
+}
+#depth_1 ul li a{
+  display: inline-block;
+}
+#depth_1 ul li a i{
+  display: block;
+  background-color: #eee;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 40%;
+}
+#depth_1 ul li p{
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+}
+#depth_1 ul li p span{
+  display: block;
+}
+#depth_1 .wrap #menu_yellow li a i{
+  background-color: #fff89e;
+}
+
+#depth_1 input:checked + label{
+  background-color: red;
+  color: #fff;
+  width: 80px;
+  border-radius: 30px;
+}
+#depth_1 input:checked + label + ul{
+  z-index: 5;
+}
+div.BG{
+  position: absolute;
+  z-index: -1;
+  background-color: rgb(232 230 230 / 64%);
+  width: 160px;
+  height: 30px;
+  border-radius: 30px;
+  top: 0;
+  left: 177px;
+}
+
+#main_banner{
+  width: 1280px;
+  margin: 0 auto;
+}
+#main_banner .unit{
+  width: 5%;
+}
+.unit .num{
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(70% - 4px);
+}
+.unit .num::before{
+  content: "3";
+  display:inline-block;
+  position: relative;
+  left: -5px;
+  font-weight: bold;
+}
+.unit .num::after{
+  content: "3";
+  display:inline-block;
+  position: relative;
+  right: -5px;
+  font-weight: bold;
+}
+.unit .xi-pause{
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+  width: calc(30% - 4px);
+  cursor: pointer;
+}
+
+.banner{
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  background-image: url(/img/event/bg.jpg);
+  background-size: cover;
+  border-radius: 10px 40px 10px 10px;
+}
+.banner a{}
+.banner .banner_left{
+  display: inline-block;
+  width: calc(20% - 4px);
+  text-align: left;
+}
+.banner .leftbox{}
+.banner div{
+  vertical-align: middle;
+}
+.banner div span{
+  display: inline-block;
+  background-color: #fff;
+  padding: 18px;
+  border-radius: 35%;
+  position: relative;
+  cursor: pointer;
+  }
+.banner .leftbox:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-bottom: solid 2px #000;
+  border-right: solid 2px #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.banner .rightbox:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-top: solid 2px #000;
+  border-left: solid 2px #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.banner .banner_center{
+  display: inline-block;
+  width: calc(60% - 4px);
+  text-align: center;
+}
+.banner_center p{
+  font-weight: 600;
+}
+.banner_center h2{
+  font-weight: 400;
+}
+
+.banner .banner_right{
+  display: inline-block;
+  width: calc(20% - 4px);
+  text-align: right;
+}
+.banner.rightbox{}

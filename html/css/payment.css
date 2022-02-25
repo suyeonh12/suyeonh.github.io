@@ -1,0 +1,217 @@
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+ul,ol,dl{
+  list-style: none;
+}
+input[type="checkbox"], input[type="button"]{
+  border: solid 0.5px #efefef;
+  outline: 0;
+}
+input[type="text"]{
+  border: solid 0.5px #aaa;
+  outline: 0;
+}
+
+.wrap {
+  width: 500px; height: 600px;
+  overflow: hidden;
+}
+.wrap .top_text_box {
+  height: 50px;
+  border-bottom:
+  solid 2px #999;
+  background-color: #000;
+}
+.wrap .top_text_box span {
+  display: block;
+  line-height: 50px;
+  text-indent: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.wrap .paymethod {
+  width: 100px;
+  position: relative;
+  margin-top: 10px;
+}
+.paymethod > li {
+  width: 100%;
+}
+.paymethod > li input[name="pay_btn"] {
+  display: none;
+}
+.paymethod > li > input:checked + label {
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
+.paymethod > li > input:checked + label + .pay_window {
+  z-index: 3;
+}
+.paymethod > li > label {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ccc;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.paymethod > li .pay_window {
+  position: absolute;
+  top: 0; left: 100px;
+  width: 396px; height: 630px;
+  background-color: #fff;
+  text-align: center;
+  padding-left: 2px;
+}
+.pay_window .name {
+  display: inline-block;
+  width: 100px;
+  line-height: 40px;
+  background-color: #290775;
+  border-bottom: solid 2px #fff;
+  border-radius: 3px;
+  color: #fff;
+}
+.pay_window .info {
+  display: inline-block;
+  width: 285px;
+  line-height: 40px;
+  background-color: #efefef;
+  border-bottom: solid 2px #fff;
+  border-radius: 3px;
+}
+.pay_window .ment {
+  display: block;
+  font-weight: bold;
+  line-height: 50px;
+}
+.pay_window input[name="phone"]{
+  display: inline-block;
+  line-height: 24px;
+  height: 24px;
+  width: 80px;
+}
+.pay_window form{
+  margin-top: 50px;
+}
+.card_box ul{
+  margin-bottom: 20px;
+}
+.card_box ul::after {
+  content: "";
+  display: block;
+  clear: both;}
+.card_box li {
+  float: left;
+  width: calc((100% - 20px)/4);
+  margin: 5px 5px 0 0
+}
+.card_box li input {
+  display: none;
+}
+.card_box li label {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border:solid 1px #ccc;
+  border-radius: 3px;
+}
+.card_box li input:checked + label {
+  background-color: #662bbb;
+  color: #fff;
+  font-weight: bold;
+}
+.card_box li select{
+  height: 50px;
+}
+
+.card_info_box {
+  padding-top: 20px;
+  border-top: solid 1px #ddd;
+  text-align: left;
+}
+.card_info_box .name {
+  vertical-align: top;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.card_info_box .card_num {
+  margin-right: 4px;
+  line-height: 28px;
+  text-align: center;
+}
+.card_info_box input {
+  width: 56px;
+  height: 28px;
+  outline: none;
+  vertical-align: top;
+  border-radius: 3px;
+  text-indent: 5px;
+  border: solid 1px #666;
+}
+
+.month {
+  text-align: left;
+  margin-top: 10px;
+}
+.month .name {
+  vertical-align: top;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.month #month_list {
+  display: inline-block;
+  text-align: center;
+  width: 94px;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 5px;
+  border: solid 1px #ccc;
+ }
+
+.pay_window .pay {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  width: 100px;
+  height: 50px;
+  background-color: #b90000;
+  color: #fff;
+  border-radius: 5px;
+  margin: 80px auto 0;
+  cursor: pointer;
+}
+.pay_window .pay_2 {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: #b90000;
+  color: #fff;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  border: 0;
+}
+
+.pay_window .account {
+  display: block;
+  text-align: center;
+  line-height: 80px;
+  margin-top: 20px;
+  background-color: #eee;
+  font-weight: bold;
+}

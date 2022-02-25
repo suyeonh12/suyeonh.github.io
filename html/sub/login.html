@@ -1,0 +1,46 @@
+<?php include_once('../layout/header.html'); ?>
+<div id="login_wrap">
+  <div class="login_section">
+    <div id="login_section_left">
+      <p>
+        <span id="why_no_member">로그인이 필요합니다!</span>
+        <span><img src="/img/logo-glow.png" alt="#">로그인하고</span>
+        <span>엄선된 LP & 턴테이블 대여를 경험해보세요!</span>
+        <span id="counter_span">오늘 고객님을 위해 준비된 음반 <span id="lp_counter">20706</span>개</span>
+      </p>
+    </div>
+    <div id="login_section_right">
+      <p class="user_no_member">PL 회원이 아니신가요? <a href="/sub/join.html">회원가입</a></p>
+      <div class="login_box">
+        <form id="login_form" method="get">
+          <div class="login_form">
+            <p>
+              <label for="user_id">아이디</label>
+              <input type="text" id="user_id" name="userID">
+            </p>
+            <p>
+              <label for="user_pw">비밀번호</label>
+              <input type="password" id="user_pw" maxlength="20">
+            </p>
+          </div>
+          <input type="reset" value="로그인" id="loginBtn">
+        </form>
+      </div>
+      <ul class="sns_login_button">
+        <li>
+          <a class="gg" href="https://accounts.google.com/" target="_blank"><span class="xi-google"></span> 구글 로그인</a>
+        </li>
+        <li>
+          <a class="kk" href="https://accounts.kakao.com/" target="_blank"><span class="xi-kakaotalk"></span> 카카오 로그인</a>
+        </li>
+        <li>
+          <a class="nv" href="https://nid.naver.com/" target="_blank"><span class="xi-naver"></span> 네이버 로그인</a>
+        </li>
+        <li>
+          <a class="fb" href="https://ko-kr.facebook.com/" target="_blank"><span class="xi-facebook"></span> 페이스북 로그인</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<?php include_once('../layout/footer.html'); ?>

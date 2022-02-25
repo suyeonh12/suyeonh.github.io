@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/js.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="./js/sample.js"></script>
+<body>
+  <button id="btn" type="button" name="button">반복~~</button>
+  <table id="table_tag" width="100%" style="margin-top:200px;">
+    <!-- 테이블테그는 인라인블럭속성에 가깝다.
+    자식태그 tr(층, 행)과 그 하위 태그로 td 혹은 th 태그를 갖는다.-->
+    <caption>테이블태그 샘플</caption>
+    <!--표의 제목을 나타내며,무조건 table의 첫번째 자식으로 와야함.-->
+    <thead> <!--테이블의 제목 그룹화 한번만 선언가능-->
+      <tr>
+        <th>No</th>
+        <th>타이틀이 담겨지는 태그</th>
+        <th>두껍고 가운데 정렬</th>
+        <!-- DOM구조 table >tr > th + td,
+        웹접근성에서 필드로 처리되어서 웹접근시 태그짜기가 좀 어려움 -->
+      </tr>
+    </thead>
+    <tbody><!--테이블 본문을 그룹화. 여러번 선언 가능함.-->
+      <tr>
+        <td align="center">1</td>
+        <td>테이터가 담겨지는 태그</td>
+        <td rowspan="2">아래 td와 병합</td>
+      </tr>
+      <tr>
+      <td align="center">2</td>
+      <td>위의 층에서 하나가져가서 여기층(tr)에서는 td가 2개뿐임</td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td>정상화된 tr층 </td>
+        <td>3개의 칸으로 정상화</td>
+      </tr>
+    </tbody>
+    <tfoot><!--테이블의 하단 요약부분을 그룹화. 한 번만 선언 가능.-->
+      <tr>
+      <td colspan="3" align="center" valign="middle" height="100">옆으로 td 3개를 모두 병합함<br>
+        수직, 수평정렬, 너비, 높이도 옵션을 스스로 가지고 있으며 속성이 무시되는 상황이 발생하기도 한다.<br>
+        tr 높이가 10이고 td높이가 50이면 자식태그의 옵션을 준수하고 부모태그의 옵션스타일을 무시한다.</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

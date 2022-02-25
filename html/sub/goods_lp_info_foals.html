@@ -1,0 +1,134 @@
+<?php include_once('../layout/header.html'); ?>
+<section class="goods_info">
+  <div class="goods_info_head">
+    <div class="head_thumbnail">
+      <div class="thumb_img"><img src="/img/goods/lp/pop_9.jpg" alt="Foals (폴즈) - Collected Reworks [핑크 & 옐로우 & 그린 컬러 3LP]"></div>
+    </div>
+    <div class="head_goodsinfo">
+      <form name="form" method="get">
+        <h3><a href="#">Foals (폴즈) - Collected Reworks [핑크 & 옐로우 & 그린 컬러 3LP]</a></h3>
+        <dl class="basic_info">
+          <dt class="info_title">아티스트</dt><dd class="info_con"><a href="#none">Foals 밴드/Hot Chip,Rufus Du Sol,Bobby Krlic,Kuu!,Surkin,Mura Masa,Lindstrøm,Mount Kimbie 믹싱</a></dd>
+          <dt class="info_title">유통사</dt><dd class="info_con">Warner Music</dd>
+          <dt class="info_title">발매일</dt><dd class="info_con">2020년 11월</dd>
+        </dl>
+        <dl class="count_info">
+          <dt class="info_title">정가</dt><dd class="info_con line">56,600</dd>
+          <dt class="info_title">대여가</dt><dd class="info_con color_pp">27,000<input type=hidden name="sell_price" value="27000"></dd>
+          <dt class="info_title">적립금</dt><dd class="info_con">270원(1%) + 멤버십(3~10%)</dd>
+          <dt class="info_title">배송비</dt><dd class="info_con">2500원 (50,000원 이상 배송비 무료)</dd>
+          <dt class="info_title">수령 예상일</dt><dd class="info_con">지금 택배로 주문하면 2021년 1월 10일 출고</dd>
+        </dl>
+        <dl class="review_info">
+          <dt class="info_title">만족도</dt>
+          <dd class="info_con">
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star-o"></i>
+            7.8
+          </dd>
+          <dt class="info_title">주문 수</dt><dd class="info_con">304</dd>
+          <dt class="info_title">리뷰 수</dt><dd class="info_con">0</dd>
+        </dl>
+        <p class="order">
+          <span class="amount">상품수량 </span>
+          <input type="button" id="minusBtn" value=" - " onclick="del();">
+          <input id="goodsCount" type="text" name="amount" value="1" size="3" onchange="change();">
+          <input type="button" id="plusBtn" value=" + " onclick="add();"><br/>
+        </p>
+        <p class="order">
+          <span>총 상품금액</span>
+          <input id="countResult" type="text" name="sum" size="11" readonly><span> 원</span>
+        </p>
+        <span class="button">
+          <a href="/sub/cart.html" class="stack_cart">장바구니</a>
+          <a href="/sub/order.html" class="perchase">구매하기</a>
+        </span>
+        <p class="alert">
+          ※ 명확한 재생불량 외 경미한 커버 구겨짐으로 인한 사유는 교환 반품 대상이 아님을 알려드립니다.
+        </p>
+      </form>
+    </div>
+    <div class="ad_banner">
+      <a href="/sub/event_info.html">
+        <img src="/img/event/event-banner_10.png" alt="#">
+      </a>
+      <a href="/sub/exhibition_info.html">
+        <img src="/img/event/exhibition_3.png" alt="#">
+      </a>
+    </div>
+    <div class="goods_detail">
+      <dl>
+        <dt class="detail_title">기본정보</dt>
+        <dd class="detail_con">
+          <p class="vinyl">
+            수입국 : EU <span class="space"></span> 9029520175A (Cat.No) <span class="space"></span> Disc : 3장 <span class="space"></span> 140g
+          </p>
+          <p class="category">주제분류</p>
+          <ul class="goods_category">
+            <li><a href="/sub/goods_lp2.html">LP</a> > <a href="#none">POP</a></li>
+            <li><a href="/sub/goods_lp2.html">LP</a> > <a href="#none">락</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="detail_title">음반 소개</dt>
+        <dd class="detail_con">
+          <p>
+            <span>영국 옥스포드 출신의 중견 인디락 밴드 Foals의 2020년 신작으로 이들의 대표적인 히트곡들을 재능 넘치는 DJ들이 새로운 리믹스로 담은 이색적인 컨셉을 들려준다.</span>
+          </p>
+          <p>
+            <span>Hot Chip의 버전으로 소개되는 'My Number'를 비롯하여 R?F?S DU SOL의 'The Runner', 'Ewan Pearson's Return to the Villa of Joy의 'Olympic Airways' 이밖에 Solomun, Topher Jones, John Dahlb?ck, Deadboy, Hot Since 82 등이 참여한 21곡의 매력적인 작품들이 수록되어 있다. Vol.1(핑크 컬러), Vol.2(엘로우 컬러), Vol.3(그린 컬러)로 구성.</span>
+          </p>
+          <p>
+            <span style="font-weight:bold">[ 트랙리스트 ]</span>
+            <span>Disc1</span>
+            <span>A1 My Number (Hot Chip Remix)</span>
+            <span>A2 Mountain At My Gates (Alex Metric Remix)</span>
+            <span>A3 Into The Surf (Hot Since 82 Remix)</span>
+            <span>B1 The Runner (Rufus Du Sol Remix)</span>
+            <span>B2 In Degrees (Purple Disco Machine Remix)</span>
+            <span>B3 Mountain At My Gates (Sebastian)</span>
+            <span>B4 Late Night (Solomun Remix)</span>
+          </p>
+          <p>
+            <span>Disc2</span>
+            <span>C1 Inhaler (Tom Vek's Wheezemix)</span>
+            <span>C2 What Went Down (Haxan Cloak Remix)</span>
+            <span>C3 Wash Off (Kuu Remix)</span>
+            <span>C4 Hummer (Surkin Remix)</span>
+            <span>D1 Mountain At My Gates (Jono Ma Jagwar Ma Mix)</span>
+            <span>D2 What Went Down (Bandwidth Remix)</span>
+            <span>D3 Miami (Lissvik Remix)</span>
+            <span>D4 Night Swimmers (Mura Masa Edit)</span>
+          </p>
+          <p>
+            <span>Disc3</span>
+            <span>E1 My Number (Totally Enormous Extinct Dinosaurs Remix)[Extended]</span>
+            <span>E2 Give It All (Lindstrøm) [Remix]</span>
+            <span>E3 Dreaming Of (Joe Corti Remix)</span>
+            <span>F1 Balloons (Kieran Hebden Version)</span>
+            <span>F2 Tron (Kieran Hebden Version)</span>
+            <span>F3 Spanish Sahara (Mount Kimbie Remix)</span>
+            <span>F4 Late Night (Koreless Purple Cowboy Remix)</span>
+          </p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="detail_title">아티스트 소개</dt>
+        <dd class="detail_con">
+          <p class="artist_name">폴스 (Foals)</p>
+          <p class="artist_info">영국 옥스포드 출신의 인디락 밴드. 담담하면서도 감성적인 사운드를 고루 갖춘 팀으로 평가받고 있다.
+야니스 필리파키스(Yannis Philippakis), 잭 베이반(Jack Bevan), 지미 스미스(Jimmy Smith), 에드윈 컨그리브(Edwin Congreave), 월터 거버스(Walter Gervers)</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="detail_title">리뷰</dt>
+        <dd class="detail_con"></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<?php include_once('../layout/footer.html'); ?>

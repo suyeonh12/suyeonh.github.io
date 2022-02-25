@@ -1,0 +1,84 @@
+<?php include_once('../layout/header.html'); ?>
+<section id="comunity_wrap">
+  <div class="comunity_head_div">
+    <h2 class="comunity">리뷰</h2>
+  </div>
+  <div class="comunity_section">
+    <ul class="review_board">
+      <!--li.review_list(>span.num{0$}+p.review_info(>span.review_title+span.reviewer)+span.review_date)*10-->
+      <li class="review_list" id="review_list_top">
+        <span class="num">번호</span>
+        <p class="review_info"><a class="review_title">제목</a><span class="reviewer">아이디</span></p>
+        <span class="review_date">날짜</span>
+      </li>
+      <li class="review_list">
+        <span class="num">01</span>
+        <p class="review_info"><a href="#none" class="review_title">세상 분위기 대박.. 음질도 짱짱 만족입니다!</a><span class="reviewer">rhkwp_jung</span></p>
+        <span class="review_date">2021.01.26</span>
+      </li>
+      <li class="review_list">
+        <span class="num">02</span>
+        <p class="review_info"><a href="#none" class="review_title">너무 좋아요~~</a><span class="reviewer">today_gamsung</span></p>
+        <span class="review_date">2021.01.30</span>
+      </li>
+      <li class="review_list">
+        <span class="num">03</span>
+        <p class="review_info"><a href="#none" class="review_title">멋진 턴테이블!</a><span class="reviewer">LP_dukhoo</span></p>
+        <span class="review_date">2021.01.30</span>
+      </li>
+      <li class="review_list">
+        <span class="num">04</span>
+        <p class="review_info"><a href="#none" class="review_title">완전 예뻐요 ㅠㅠ</a><span class="reviewer">whddnjs0814</span></p>
+        <span class="review_date">2021.01.31</span>
+      </li>
+      <li class="review_list">
+        <span class="num">05</span>
+        <p class="review_info"><a href="#none" class="review_title">마음에 듭니다</a><span class="reviewer">bjm4256</span></p>
+        <span class="review_date">2021.02.01</span>
+      </li>
+      <li class="review_list">
+        <span class="num">06</span>
+        <p class="review_info"><a href="#none" class="review_title">이런 경험 처음이야~!</a><span class="reviewer">onel_bamsae</span></p>
+        <span class="review_date">2021.02.01</span>
+      </li>
+      <li class="review_list">
+        <span class="num">07</span>
+        <p class="review_info"><a href="#none" class="review_title">이거 왜 안사세요? 당장 사세요</a><span class="reviewer">gwanggo88</span></p>
+        <span class="review_date">2021.02.02</span>
+      </li>
+      <li class="review_list">
+        <span class="num">08</span>
+        <p class="review_info"><a href="#none" class="review_title">[네이버리뷰] gg</a><span class="reviewer">LP_crazy</span></p>
+        <span class="review_date">2021.02.02</span>
+      </li>
+      <li class="review_list">
+        <span class="num">09</span>
+        <p class="review_info"><a href="#none" class="review_title">캠핑갈 때 분위기 짱~!</a><span class="reviewer">gogo_camper</span></p>
+        <span class="review_date">2021.02.02</span>
+      </li>
+      <li class="review_list">
+        <span class="num">10</span>
+        <p class="review_info"><a href="#none" class="review_title">[네이버리뷰] 좋아요</a><span class="reviewer">keken_0406</span></p>
+        <span class="review_date">2021.02.03</span>
+      </li>
+    </ul>
+    <div class="comunity_pagination">
+      <a href="#"><i class="xi-angle-left"></i></a>
+      <a href="/sub/goods_LP.html">1</a>
+      <a href="#"><i class="xi-angle-right"></i></a>
+    </div>
+    <form class="review_search">
+      <select class="review_search_category">
+        <optgroup label="">
+          <option value="review_title">제목</option>
+          <option value="review_content">내용</option>
+          <option value="reviewer">아이디</option>
+          <option value="title+content">제목+내용</option>
+        </optgroup>
+      </select>
+      <input id="review_input" type="search">
+      <input id="reviewSearchBtn" type="submit" name="review_search" value="검색">
+    </form>
+  </div>
+</section>
+<?php include_once('../layout/footer.html'); ?>

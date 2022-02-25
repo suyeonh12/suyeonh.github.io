@@ -1,0 +1,189 @@
+<?php include_once('../layout/header.html'); ?>
+<div id="join">
+  <form action="#">
+    <fieldset>
+      <legend>회원가입</legend>
+
+      <p>
+        <span class="join">이름</span>
+        <input type="text" name="name" maxlength="13" id="joinName" autofocus required>
+        <small>※ 필수입력</small>
+      </p>
+
+      <p>
+        <span class="join">ID</span>
+        <input type="text" name="id" maxlength="13" id="joinID" required placeholder="영문,숫자만 입력가능">
+        <small>※ 필수입력</small>
+      </p>
+
+      <p>
+        <span class="join">비밀번호</span>
+        <input type="password" name="pw" maxlength="13" id="joinPW" required placeholder="영문,숫자,특문조합 8글자">
+        <small>※ 필수입력</small>
+      </p>
+
+      <p>
+        <span class="join">비밀번호 확인</span>
+        <input type="password" name="pw_check" id="joinPwCheck" maxlength="13" required placeholder="비밀번호를 한 번 더 입력해주세요">
+        <small>※ 필수입력</small>
+      </p>
+
+      <p>
+        <span class="join">비밀번호 힌트</span>
+        <input type="text" name="pw_hint" id="joinPwHint" maxlength="15" required placeholder="비밀번호 분실시 사용됩니다">
+        <small>※ 필수입력</small>
+      </p>
+
+      <p>
+        <span class="join">성별</span>
+        <span class="gender_label">
+          <input type="radio" name="gender" id="man" value="man" checked>
+          <label for="man">남성</label>
+          <input type="radio" name="gender" id="woman" value="woman">
+          <label for="woman">여성</label>
+          <input type="radio" name="gender" id="none" value="none">
+          <label for="none">둘 다 아님</label>
+        </span>
+      </p>
+
+      <p>
+        <span class="join">생년월일</span>
+        <input type="date" id="birthDate">
+      </p>
+
+      <p>
+        <span class="join">휴대폰번호</span>
+        <span class="phone_box">
+          <select class="phone" name="phone_1">
+            <optgroup label="" size="1">
+              <option value="010">010</option>
+              <option value="011">011</option>
+              <option value="016">016</option>
+              <option value="017">017</option>
+              <option value="019">019</option>
+            </optgroup></select>
+            <span>-</span>
+            <input type="text" name="phone_2" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            <span>-</span>
+            <input type="text" name="phone_3" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+        </span>
+      </p>
+
+      <p>
+        <span class="join">전화번호</span>
+        <span class="phone_box">
+          <select class="phone" name="phone_3">
+            <optgroup label="" size="1">
+              <option value="인천">032</option>
+              <option value="서울">02</option>
+              <option value="경기">031</option>
+              <option value="강원">033</option>
+              <option value="충남">041</option>
+              <option value="충북">043</option>
+              <option value="세종">044</option>
+              <option value="부산">051</option>
+              <option value="대구">053</option>
+              <option value="경북">054</option>
+              <option value="경남">055</option>
+              <option value="전남">061</option>
+              <option value="광주">062</option>
+              <option value="전북">063</option>
+              <option value="제주">064</option>
+            </optgroup>
+          </select>
+          <span>-</span>
+          <input type="text" name="phone_4" maxlength="4" <input type="text"
+        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+          <span>-</span>
+          <input type="text" name="phone_5" maxlength="4" <input type="text"
+        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+        </span>
+      </p>
+
+      <p class="zipcode">
+        <span class="join">주소</span>
+        <input type="text" id="zipcode" name="zipcode" class="postcodify_postcode5" value="우편번호" />
+        <button id="postcodify_search_button">검색</button>
+        <span class="line3">
+          <input type="text" name="doromyung" class="postcodify_address" value="도로명주소" readonly />
+          <input type="text" name="add_address" class="postcodify_extra_info" value="" />
+        </span>
+        <span class="line4">
+          <input type="text" name="address" class="postcodify_details" value="" placeholder="상세주소" />
+        </span>
+      </p>
+
+      <p>
+        <span class="join">메일주소</span>
+        <input type="text" name="str_email01" id="str_email01"> @
+        <input type="text" name="str_email02" id="str_email02" disabled value="naver.com">
+        <select name="selectEmail" id="selectEmail">
+           <option value="1">직접입력</option>
+           <option value="naver.com" selected>naver.com</option>
+           <option value="hanmail.net">hanmail.net</option>
+           <option value="hotmail.com">hotmail.com</option>
+           <option value="nate.com">nate.com</option>
+           <option value="yahoo.co.kr">yahoo.co.kr</option>
+           <option value="empas.com">empas.com</option>
+           <option value="dreamwiz.com">dreamwiz.com</option>
+           <option value="freechal.com">freechal.com</option>
+           <option value="lycos.co.kr">lycos.co.kr</option>
+           <option value="korea.com">korea.com</option>
+           <option value="gmail.com">gmail.com</option>
+           <option value="hanmir.com">hanmir.com</option>
+           <option value="paran.com">paran.com</option>
+        </select>
+      </p>
+
+      <p>
+        <span class="join" id="check_box">관심장르<br>(중복선택가능)</span>
+        <span class="line">
+          <input type="checkbox" name="like" id="kayo" value="kayo" checked>
+          <label for="kayo">가요</label>
+          <input type="checkbox" name="like" id="pop" value="pop">
+          <label for="pop">팝</label>
+          <input type="checkbox" name="like" id="classic" value="classic">
+          <label for="classic">클래식</label>
+          <input type="checkbox" name="like" id="rock" value="rock">
+          <label for="rock">락</label>
+          <input type="checkbox" name="like" id="jazz" value="jazz">
+          <label for="jazz">재즈</label>
+          <input type="checkbox" name="like" id="kukak" value="kukak">
+          <label for="kukak">국악</label>
+        </span>
+        <span class="line2">
+          <input type="checkbox" name="like" id="world" value="world">
+          <label for="world">월드</label>
+          <input type="checkbox" name="like" id="OST" value="OST">
+          <label for="OST">OST</label>
+          <input type="checkbox" name="like" id="k-pop" value="k-pop">
+          <label for="k-pop">K-POP</label>
+          <input type="checkbox" name="like" id="etc" value="etc">
+          <label for="etc">기타</label>
+          <input id="my_etc" type="text" name="like" maxlength="10" placeholder="기타 선택하신 분만 작성">
+        </span>
+      </p>
+
+      <p>
+        <span class="join">가입사유<br>(중복선택가능)</span>
+        <input type="checkbox" name="like" id="check_1" value="check_1" checked>
+        <label for="check_1">검색</label>
+        <input type="checkbox" name="like" id="check_2" value="check_2">
+        <label for="check_2">추천</label>
+        <input type="checkbox" name="like" id="check_3" value="check_3">
+        <label for="check_3">광고</label>
+      </p>
+
+      <p class="form_end">
+        <textarea name="comment" cols="50" rows="7" placeholder="가입인사를 남겨주세요"></textarea>
+      </p>
+    </fieldset>
+    <input id="join_btn" type="submit" value="PL의 회원으로 가입합니다">
+  </form>
+</div>
+<script>
+
+document.getElementById('birthDate').valueAsDate = new Date();
+
+</script>
+<?php include_once('../layout/footer.html'); ?>

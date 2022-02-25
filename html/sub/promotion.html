@@ -1,0 +1,67 @@
+<?php include_once('../layout/header.html'); ?>
+<section id="promotion">
+  <div class="promotion_title">
+    <h2>제휴/프로모션 문의</h2>
+  </div>
+  <div class="promotion_div">
+    <p class="promo_thanks">
+      <span>play LP는 언제나 새로운 제안을 기다리고 있습니다.</span>
+      <span>문의 : <a href="mailto:pl_partners@playlp.co.kr">pl_partners@playlp.co.kr</a></span>
+    </p>
+    <form action="#">
+      <p>
+        <strong class="title">제목</strong>
+        <span class="content">
+          <input type="text" id="question_title" placeholder="제목을 입력해 주세요.">
+        </span>
+      </p>
+      <p>
+        <strong class="title">제안분야</strong>
+        <span class="content">
+          <label for="promo_1"><input type="radio" name="promo" id="promo_1" checked> 상품</label>
+          <label for="promo_2"><input type="radio" name="promo" id="promo_2"> 아티스트 콘텐츠 제공</label>
+          <label for="promo_3"><input type="radio" name="promo" id="promo_3"> 기타</label>
+        </span>
+      </p>
+      <p>
+        <strong class="title">담당자</strong>
+        <span class="content">
+          <input type="text" id="partners_name">
+        </span>
+      </p>
+      <p>
+        <strong class="title">이메일</strong>
+        <span class="content">
+          <input type="text" id="partners_mail_id">
+           @ <input type="text" id="partners_mail_domain">
+        </span>
+      </p>
+      <p>
+        <strong class="title">연락처</strong>
+        <span class="content">
+          <input type="text" class="phone" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+           - <input type="text" class="phone" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            - <input type="text" class="phone" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        </span>
+      </p>
+      <p>
+        <strong class="title">제안내용</strong>
+        <span class="content">
+          <textarea name="question_content" rows="8" cols="80"></textarea>
+        </span>
+      </p>
+      <p>
+        <strong class="title">파일첨부</strong>
+        <span class="content">
+          <input type="file">
+        </span>
+      </p>
+      <input type="submit" id="promo_btn" value="제안 보내기">
+    </form>
+    <p class="promo_thanks">
+      <span>소중한 제안에 감사드립니다.</span>
+      <span>검토 후 최대한 빠른 시일 내로 연락드리겠습니다. (최대 2주 소요)</span>
+    </p>
+  </div>
+</section>
+<?php include_once('../layout/footer.html'); ?>

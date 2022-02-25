@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'DOSMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSMyungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MiraeroNormal';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/MiraeroNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BMEuljiro10yearslater';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jaemin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jaemin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dovemayo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BMKIRANGHAERANG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMKIRANGHAERANG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'BMEuljiro10yearslater';
+  color: #000;
+}
+a{
+  text-decoration: none;
+  font-family: 'Jaemin';
+}
+ol,dl,ul{
+  list-style: none;
+}
+
+#wrap{
+  width: 100vw;
+  min-width: 1281px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  text-align: left;
+  background-image: url(/img/homework/bg.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #b2e6f3;
+}
+
+#header{
+  display: inline-block;
+  width: 200px;
+  min-height: 670px;
+  background-color: #def9fd;
+  text-align: center;
+  vertical-align: top;
+  background-image: url('/img/homework/heart-bono.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#header h1{
+  margin: 20px 0;
+}
+#header h1 a{
+  display: block;
+}
+#header h1 a img{
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  }
+#header .depth_1{}
+.depth_1 > li{
+}
+.depth_1 > li:hover .ab_box{
+  height: 200px;
+}
+.depth_1 > li:hover > a{
+  font-weight: bold;
+  color: red;
+}
+.depth_1 > li a{
+  display: block;
+  background-color: antiquewhite;
+  line-height: 50px;
+}
+.depth_1 .ab_box{
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.ab_box li:hover a{
+  font-weight: bold;
+  color: blue;
+}
+.ab_box li a{
+  display: block;
+  background-color: aliceblue;
+}
+
+#con{
+  display: inline-block;
+  width: 1080px;
+  margin-left: -4px;
+  vertical-align: top;
+}
+#con .fade_list{
+  height: 200px;
+  position: relative;
+}
+#con .fade_list li{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#con .fade_list li a{
+  font-family: 'BMKIRANGHAERANG';
+  display: block;
+  font-size: 100px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.fade1{
+  background-color: red;
+}
+.fade2{
+  background-color: orange;
+}
+.fade3{
+  background-color: yellow;
+}
+.fade4{
+  background-color: green;
+}
+.fade5{
+  background-color: blue;
+}
+
+#con .tab_section{
+  width: 1080px;
+  text-align: center;
+  margin: 30px 0 250px;
+}
+.tab_section ul{
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 4px);
+}
+.tab_section ul li{
+  display: inline-block;
+  width: calc(50% + 1px);
+  margin: 0 -3px;
+}
+.tab_section ul li input{
+  display: none;
+}
+.tab_section ul li label{
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+label[for="wuju1"]{
+  background-image: linear-gradient(45deg, #f516cf, #440af7);
+}
+label[for="wuju2"]{
+  background-image: linear-gradient(45deg, #440af7, #1814ed);
+}
+
+.tab_section ul li .ab_tab{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  top: 100%;
+  left: 0;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 1;
+}
+
+.tab_section ul li input:checked + label{
+  color: #fff;
+}
+#con .tab_section ul li input:checked + label + div{
+  z-index: 2;
+}
+.ab_wuju{
+  background-image: url('/img/homework/wuju.jpg');
+  background-size: cover;
+}
+.ab_tab p{
+  font-family: 'DOSMyungjo';
+}
+.ab_tab p span{
+  display: block;
+}
+.ab_wuju p span{
+  color: #fff;
+}
+.ab_wuju p .p_title{
+    font-size: 18px;
+}
+.ab_wuju p .p_text{
+}
+
+.ab_drink{
+  background-image: url('/img/homework/juice.gif');
+  background-size: 206px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: right;
+}
+.ab_drink p span{
+  font-size: 40px;
+  margin-left: 50px;
+}
+.tab li input[id="bono1"]:checked + label{
+  color: blue;
+  background-color: #fff;
+}
+label[for="bono1"]{
+  background-color: #42baf5;
+}
+.ab_bono1{
+  background-image: url(/img/homework/bg.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #b2e6f3;
+}
+.ab_bono1 p{
+  width: 340px;
+}
+.tab input[id="bono2"]:checked + label{
+  background-color: #fff;
+  color: #000;
+}
+label[for="bono2"]{
+  background-color: #000;
+  color: #fff;
+}
+.ab_bono2{
+  background-image: url('/img/homework/wadang.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ab_bono2 p{
+  font-size: 20px;
+  color: darkmagenta;
+}
+
+.gallery{}
+.gallery a{
+  display: inline-block;
+  width: calc(25% - 24px);
+  margin: 10px;
+  height: 100px;
+  overflow: hidden;
+}
+.gallery a img{
+  display: block;
+  width: 100%;
+}
+
+#footer{
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #ddd;
+}
+#footer .left{
+  display: inline-block;
+  width: calc(20% - 4px);
+  text-align: left;
+  vertical-align: middle;
+}
+.left h1{}
+.left h1 a{
+  display: block;
+  width: 100px;
+  margin-left: 20px;
+}
+.left h1 a img{
+  display: block;
+  width: 100%;
+}
+
+#footer .center{
+  display: inline-block;
+  width: calc(50% - 4px);
+  text-align: center;
+  vertical-align: middle;
+}
+.center p{
+}
+.center p span{
+  display: block;
+  color: #333;
+  font-family: 'DOSMyungjo';
+}
+#footer .right{
+  display: inline-block;
+  width: calc(30% - 4px);
+  text-align: right;
+  vertical-align: middle;
+}
+#family{
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+#family input{
+  display: none;
+}
+#family input:checked + label + ul{
+  height: 237.5px;
+}
+#family label{
+  background-image: linear-gradient(0deg, yellow, red);
+  font-size: 30px;
+  font-family: 'Dovemayo-Bold';
+  padding: 10px;
+  display: inline-block;
+}
+#family ul{
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.8s;
+}
+#family li{}
+#family li a{
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+  background-color: cornflowerblue;
+  border: solid 0.5px chartreuse;
+}

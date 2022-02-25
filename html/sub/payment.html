@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>전자결제 서비스</title>
+  <link rel="stylesheet" href="/css/payment.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="top_text_box">
+    <span>전자결제 서비스</span>
+  </div>
+  <ul class="paymethod">
+    <li>
+      <input type="radio" name="pay_btn" id="pay_btn_2" checked>
+      <label for="pay_btn_2">무통장 입금</label>
+      <div class="pay_window">
+        <span class="name">상품명</span>
+        <span class="info">엔니오 모리꼬네 - 시네마 천국…외 1개</span>
+        <span class="name">상품금액</span>
+        <span class="info">33,000원</span>
+        <span class="account">신한 110-297-123050 예금주 : 한수연</span>
+        <span class="ment">3일 이내 입금하시지 않으면 자동 취소됩니다.</span>
+
+        <form action="#">
+          <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4" required>
+           - <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4" required>
+            - <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4" required>
+          <button class="pay_2">계좌정보 문자로 받기</button>
+        </form>
+      </div>
+    </li>
+    <li>
+      <input type="radio" name="pay_btn" id="pay_btn_1">
+      <label for="pay_btn_1" id="cardPayment">신용카드</label>
+      <div class="pay_window">
+        <span class="name">상품명</span>
+        <span class="info">엔니오 모리꼬네 - 시네마 천국…외 1개</span>
+        <span class="name">상품금액</span>
+        <span class="info">33,000원</span>
+        <span class="ment">결제하실 카드를 선택하여 주십시오</span>
+        <div class="card_box">
+          <ul>
+            <li><input type="radio" name="card" id="card_1"><label for="card_1">삼성</label></li>
+            <li><input type="radio" name="card" id="card_2"><label for="card_2">비씨</label></li>
+            <li><input type="radio" name="card" id="card_3"><label for="card_3">국민</label></li>
+            <li><input type="radio" name="card" id="card_4"><label for="card_4">현대</label></li>
+            <li><input type="radio" name="card" id="card_5"><label for="card_5">신한</label></li>
+            <li><input type="radio" name="card" id="card_6"><label for="card_6">롯데</label></li>
+            <li><input type="radio" name="card" id="card_7"><label for="card_7">외환</label></li>
+            <li>
+              <select class="card_etc" name="--기타카드--">
+                <option value="#" disabled selected>기타</option>
+                <option value="card_etc_1">광주</option>
+                <option value="card_etc_2">교보증권</option>
+                <option value="card_etc_3">농협</option>
+                <option value="card_etc_4">수협</option>
+                <option value="card_etc_5">신협</option>
+                <option value="card_etc_6">씨티</option>
+                <option value="card_etc_7">우리</option>
+                <option value="card_etc_8">우체국체크</option>
+                <option value="card_etc_9">유안타증권</option>
+                <option value="card_etc_10">유진투자</option>
+                <option value="card_etc_11">저축은행</option>
+                <option value="card_etc_12">전북</option>
+                <option value="card_etc_13">제주</option>
+                <option value="card_etc_14">카카오뱅크</option>
+                <option value="card_etc_15">케이뱅크</option>
+                <option value="card_etc_16">하나</option>
+                <option value="card_etc_17">DB금융투자</option>
+                <option value="card_etc_18">KB증권</option>
+                <option value="card_etc_19">KDB산업</option>
+                <option value="card_etc_20">MG새마을</option>
+                <option value="card_etc_21">NH투자증권</option>
+                <option value="card_etc_22">SK증권</option>
+              </select>
+            </li>
+          </ul>
+          <div class="card_info_box">
+            <span class="name">카드번호</span>
+            <span class="card_num">
+              <input type="text" maxlength="4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/> - <input type="text" maxlength="4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/> -
+              <input type="text" maxlength="4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/> - <input type="text" maxlength="4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+            </span>
+          </div>
+          <div class="month">
+            <span class="name">할부개월</span>
+            <select name="month_list" id="month_list">
+              <option value="month_1">일시불</option>
+              <option value="month_2">2개월(무이자)</option>
+              <option value="month_3">3개월(무이자)</option>
+              <option value="month_4">4개월(무이자)</option>
+              <option value="month_5">5개월(무이자)</option>
+              <option value="month_6">6개월(무이자)</option>
+              <option value="month_7">7개월</option>
+              <option value="month_8">8개월</option>
+              <option value="month_9">9개월</option>
+              <option value="month_10">10개월</option>
+              <option value="month_11">11개월</option>
+              <option value="month_12">12개월</option>
+            </select>
+          </div>
+        </div>
+        <span class="pay">결제하기</span>
+      </div>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "transport": "ftp",
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "suyeonh.dothome.co.kr",
+  "port": "21",
+  "target": "/",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "suyeonh",
+  "password": "tndusektgha12!",
+  "watch": [
+    "/html/scss/sass-header.min.css"
+  ]
+}

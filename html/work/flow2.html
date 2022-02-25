@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>타이드플로_study</title>
+  <link rel="shortcut icon" href="/tideflo.ico" type="image/x-icon">
+  <link rel="icon" href="/tideflo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="/scss/flow.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="/js/flow.js"></script>
+</head>
+<body>
+  <header id="header" class="position_fixed display_inline_block slow false">
+    <nav>
+      <ul class="depth_01">
+        <li><a href="#portfolio">포트폴리오</a></li>
+        <li><a href="#work">하는 일</a></li>
+        <li><a href="#history">걸어온 길</a></li>
+        <li><a href="#contact">오시는 길</a></li>
+      </ul>
+    </nav>
+    <ul id="request">
+      <li class="flow" id="flow">프로젝트 문의
+        <div id="modal">
+          <i class="xi-close xi-3x"></i>
+          <fieldset>
+            <legend>관리자 추가</legend>
+            <form>
+              <ul class="input-double-line form-input-box">
+                <li class="mobile-double-line left">
+                    <p class="font size18 bold margin10">이름</p>
+                    <input type="text" placeholder="홍길동">
+                </li>
+                <li class="mobile-double-line">
+                    <p class="font size18 bold margin10">괸리자 아이디</p>
+                    <input type="text" placeholder="admin">
+                </li>
+            </ul>
+            <p class="font size18 bold margin10 section-title">비밀번호</p>
+            <input type="password" placeholder="6~20자 이내의 영문과 숫자">
+            <p class="font size18 bold margin10 section-title">비밀번호 확인</p>
+            <input type="password" placeholder="비밀번호를 다시 입력해 주세요">
+            <div class="btn-box">
+              <a class="btn btn-normal" id="btn-add-admin">관리자 추가</a>
+              <a class="btn btn-normal">취소</a>
+            </div>
+            </form>
+          </fieldset>
+        </div>
+      </li>
+      <li class="flow" id="white">프로젝트 문의</li>
+      <li class="flow" id="blue">프로젝트 문의</li>
+    </ul>
+  </header>
+  <span id="pagetop" class="xi-arrow-up xi-2x"></span>
+  <div class="pagetop-change"></div>
+  <section id="content">
+      <video src="/video/pexels-rostislav-uzunov-7385122.mp4" autoplay loop muted style="width:100vw"></video>
+      <div class="text">
+        <div class="text_box">
+          <h2>흐름을 타고 트렌드를 선도하는 디지털 에이전시</h2>
+        </div>
+        <div class="text_box">
+          <h3>beyond the ocean, with the flow</h3>
+        </div>
+      </div>
+  </section>
+  <section id="portfolio">
+    <h1 class="section_title">포트폴리오</h1>
+    <hr class="grey_line">
+    <p>“ 타이드플로는 고객의 생각에 귀기울이고, 다양한 경험과 전문지식을 바탕으로<br>
+   고객이 원하는 바를 실현할 가장 효과적인 방법을 제안합니다 ”</p>
+   <ul class="project_container">
+     <li class="project_box" id="project_box_01">
+       <span class="img_box" id="img_box_01"><img src="/img/tideflo/fresh_move.png" alt="결제플랫폼 FRESH MOVE"></span>
+       <div class="project_text">
+         <p class="category"><span>App</span><span>UI/UX</span></p>
+         <p class="project_name">FRESH MOVE</p>
+         <p class="project_comment">결제플랫폼</p>
+       </div>
+     </li>
+     <li class="project_box" id="project_box_02">
+       <span class="img_box" id="img_box_02"><img src="/img/tideflo/swallow_pay.png" alt="코인거래플랫폼 SWALLOW PAY"></span>
+       <div class="project_text">
+         <p class="category"><span>App</span><span>UI/UX</span></p>
+         <p class="project_name">SWALLOW PAY</p>
+         <p class="project_comment">코인거래플랫폼</p>
+       </div>
+     </li>
+     <li class="project_box" id="project_box_03">
+       <span class="img_box" id="img_box_03"><img src="/img/tideflo/crumbs.png" alt="등기케어솔루션 CRUMBS"></span>
+       <div class="project_text">
+         <p class="category"><span>Web</span><span>UI/UX</span></p>
+         <p class="project_name">CRUMBS</p>
+         <p class="project_comment">등기케어솔루션</p>
+       </div>
+     </li>
+     <li class="project_box" id="project_box_04">
+       <span class="img_box" id="img_box_04"><img src="/img/tideflo/coin8949.png" alt="코인거래플랫폼 COIN8949"></span>
+       <div class="project_text">
+         <p class="category"><span>App</span><span>UI/UX</span></p>
+         <p class="project_name">COIN8949</p>
+         <p class="project_comment">코인거래플랫폼</p>
+       </div>
+     </li>
+   </ul>
+  </section>
+  <script type="text/javascript">
+  $(window).scroll(function(){
+  funcInterHeader();
+  });
+
+
+    function funcInterHeader(){
+    var $nowScrollValue = $(document).scrollTop();
+
+    if($nowScrollValue > 50){
+        $("header").addClass("top");
+      /*
+      if($nowScrollValue > $scrollValue) { // ë‚´ë ¤ê°ˆë•Œ
+        $scrollValue = $(document).scrollTop();
+        $("header").removeClass("top");
+      } else { // ì˜¬ë¼ê°ˆë•Œ
+        $("header").addClass("top");
+
+        $scrollValue = $(document).scrollTop();
+      }*/
+    } else {
+      $("header").removeClass("top");
+    }
+  }
+  </script>
+</body>
+</html>

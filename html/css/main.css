@@ -1,0 +1,405 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ol,ul,dl{
+  list-style: none;
+}
+
+/**------------sample.html-----------------**/
+#con{
+  width: 1280px;
+  margin: 20px auto;
+}
+
+#con h1{
+  color: #94dec3;
+  padding-bottom: 20px;
+  font-size: 2em;
+}
+.curation{
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+#con dl{
+  border-bottom: solid 2px #000;
+  padding: 20px 0;
+  height: 140px;
+  vertical-align: middle;
+}
+#con dl:nth-child(3){
+  border-top: solid 2px #000;
+}
+
+#con dt{
+  vertical-align: middle;
+  display: inline-block;
+  width: 15%;
+}
+#con dt > a{
+  display: inline-block;
+  vertical-align: middle;
+}
+#con dt > a img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#con dd{
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: middle;
+  width: 82%;
+}
+
+.category{
+  color: #90cab5;
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
+}
+.company{
+  padding-bottom: 20px;
+}
+.company a{
+  display: inline-block;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+}
+
+/**----------main.html------------------**/
+
+#header{
+  width: 100vw;
+  background-color: #000;
+}
+.con{
+  width: 1320px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.con::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.con h1{
+  float: left;
+  margin: 10px 0 10px 85px;
+  display: inline-block;
+}
+.con h1 a{
+  display: block;
+  background-color: #555;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px 0;
+  line-height: 56px;
+  width: 120px;
+  height: 56px;
+  text-align: center;
+}
+
+.depth_1{
+  float: right;
+  width: 40%;
+  display: inline-block;
+  text-align: right;
+  margin-right: 91px;
+  padding-top: 15px;
+}
+
+.depth_1 > li{
+  display: inline-block;
+  width: calc(25% - 40px);
+  position: relative;
+  margin: 0 10px;
+}
+.depth_1 > li > a{
+  display: block;
+  background-color: #aaa;
+  color: #000;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ab_box{
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.6s;
+  z-index: 4;
+}
+.ab_box li:hover a{
+  background-color: #fff;
+}
+
+.ab_box li a{
+  display: block;
+  background-color: #eee;
+  text-align: center;
+  line-height: 38px;
+  border-bottom: solid 0.5px #fff;
+}
+
+.ab_box > li > a:first-child{
+  margin-top: 13px;
+}
+
+.fake{
+  position: absolute;
+  width: 100%;
+  top:100%;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.6s;
+  background-color: #eee;
+  z-index: 3;
+}
+
+.depth_1:hover .ab_box{
+ height: 208px;
+}
+.depth_1:hover +.fake{
+  height: 208px;
+}
+
+#section{
+  background-color: aliceblue;
+  padding: 50px 0;
+}
+
+.sectioncon{
+  width: 1320px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+.tabtab{
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 40%;
+}
+
+.tab_box{
+  margin-bottom: 250px;
+}
+.tab_box > ul{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.tab_box > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.tab_box > ul > li{
+  width: 50%;
+  float: left;
+}
+.tab_box > ul > li > input{
+  display: none;
+}
+.tab_box > ul > li > label{
+  display: inline-block;
+  width: calc(100% + 5px);
+  background-color: #000;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+.tab_box ul > li > div{
+  position: absolute;
+  width: 101%;
+  top:100%;
+  left: 0;
+  z-index: 1;
+}
+
+.title{}
+.title > a{
+  display: block;
+  background-color: #666;
+  line-height: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.title li{}
+.title li a{
+  display: block;
+  line-height: 40px;
+  background-color: #eee;
+}
+
+.tab_2{
+  margin-top: 300px;
+}
+
+input[type=radio]:checked +label{
+  background-color: #fff;
+  color: #000;
+}
+input[type=radio]:checked +label +div{
+  z-index: 2;
+}
+
+.qnadiv{
+  display: inline-block;
+  text-align:right;
+  width: 45%;
+  vertical-align: top;
+}
+.qna{
+  display: inline-block;
+  width: 500px;
+  line-height: 50px;
+  text-align: left;
+  border: solid 1px #000;
+  font-size: 16px;
+}
+.qna dt{
+  display: block;
+  text-indent: 10px;
+  background-color: #eee;
+  cursor: pointer;
+  line-height: 30px;
+  border-bottom: solid 0.5px #000;
+}
+.qna dt span{
+  font-weight: bold;
+  display: inline-block;
+  text-indent: 30px;
+  cursor: pointer;
+  padding: 20px 0;
+}
+.qna > dd{
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#footer{
+  width: 100vw;
+  background-color: #333;
+}
+.footdiv{
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.foot1{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: calc(20% - 4px);
+}
+.foot1 h1{
+  text-align: left;
+}
+.foot1 h1 a{
+  display: block;
+  background-color: #555;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px 0;
+  line-height: 56px;
+  width: 120px;
+  height: 56px;
+  text-align: center;
+}
+
+.foot2{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: calc(50% - 4px);
+  padding: 20px 0;
+}
+.name{
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+}
+.foot2 p span{
+  display: block;
+  line-height: 20px;
+  color:#fff;
+  font-size: 14px;
+}
+
+.foot3{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: calc(30% - 4px);
+}
+
+.family{
+  position: relative;
+  display: inline-block;
+}
+
+.foot3 input{
+  display: none;
+}
+
+.foot3 label{
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  line-height: 50px;
+  width: 150px;
+}
+
+.ab_box2{
+  position: absolute;
+  width: 100%;
+  bottom:100%;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.ab_box2 li:hover a{
+  background-color: #fff;
+  color: #000;
+}
+.ab_box2 li a{
+  display: block;
+  background: #000;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: solid 0.3px #fff;
+  transition: 0.3s;
+}
+
+.foot3 input:checked + label{
+  background-color: #000;
+  color:#fff;
+}
+.foot3 input:checked + label + .ab_box2{
+  height: 164px;
+}

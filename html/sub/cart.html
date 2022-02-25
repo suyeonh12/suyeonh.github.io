@@ -1,0 +1,58 @@
+<?php include_once('../layout/header_success.html'); ?>
+<section class="cart_wrap">
+  <h2 class="cart">장바구니</h2>
+  <div class="cart_section">
+    <p>suyeonh 고객님은 현재 <span class="grade_img"><img src="/img/grade5.png" alt="VVIP"></span>(VVIP) 혜택을 받으실 수 있습니다. </p>
+    <ul class="cart_list">
+      <li class="cart_list_top">
+        <span class="check">
+          <label><input type="checkbox" class="checkAll"></label>
+        </span>
+        <span class="product">상품</span>
+        <span class="count">수량</span>
+        <span class="cost">가격</span>
+        <span class="mileage">적립금</span>
+        <span class="discount">할인</span>
+      </li>
+      <li id="cart_1" class="cart_li">
+          <span class="check">
+            <label><input type="checkbox" class="cartCheck" id="cartCheck1"></label>
+          </span>
+          <span class="product">
+            <a href="/sub/goods_lp_info.html"><img src="/img/goods/lp/ost_1.jpg" alt="시네마천국 OST"></a>
+            엔니오 모리꼬네 - 시네마 천국 영화음악 [180G 블루 LP]
+          </span>
+          <span class="count">
+            <input type="button" name="plusBtn" value=" - ">
+            <input type="text" name="amount" value="1" size="3">
+            <input type="button" name="plusBtn" value=" + ">
+          </span>
+          <span class="cost">15,000 <input type="hidden" name="sell_price" value="15000"></span>
+          <span class="mileage">1,650(1%+10%)</span>
+          <span class="discount">1,500(10%)<input type="hidden" name="discount_percentage" value="sell_price * 0.1"></span>
+      </li>
+      <li id="cart_2" class="cart_li">
+        <span class="check">
+          <label><input type="checkbox" class="cartCheck" id="cartCheck2"></label>
+        </span>
+        <span class="product">
+          <a href="/sub/goods_turntable_info.html"><img src="/img/goods/turntable/turn_24.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color"></a>
+          [ENWELL]감성 블루투스 레코드 턴테이블 6 color
+        </span>
+        <span class="count">
+          <input type="button" name="plusBtn" value=" - ">
+          <input type="text" name="amount" value="1" size="3">
+          <input type="button" name="plusBtn" value=" + ">
+        </span>
+        <span class="cost">22,000<input type="hidden" name="sell_price" value="22000"></span>
+        <span class="mileage">2,420(1%+10%)</span>
+        <span class="discount">2,200(10%)<input type="hidden" name="discount_percentage" value="sell_price * 0.1"></span>
+      </li>
+    </ul>
+    <button id="cart_delete">선택상품 삭제</button>
+    <p class="total">총 합계 : <span class="pp">33,300</span> 원
+    <button id="perchaseBtn">구매하기</button>
+    </p>
+  </div>
+</section>
+<?php include_once('../layout/footer.html'); ?>

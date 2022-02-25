@@ -1,0 +1,39 @@
+@mixin clear{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@mixin h2{
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 30px 0;
+  background-color: #a171f7;
+  font-family: 'GmarketSansMedium';
+}
+
+@mixin bg_bk{
+  background-color: rgba(0, 0, 0, 0.85);
+  min-height: calc(100vh - 351px);
+}
+
+@mixin bg_wh{
+  background-color: rgba(255, 251, 251, 0.87);
+}
+
+@mixin padding_all{
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+
+@mixin slick-before{
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 0;
+  position: relative;
+  top:0;
+  vertical-align: middle;
+  opacity: 0.8;
+}

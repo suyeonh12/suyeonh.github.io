@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="/css/mmo.css">
+  <title>Document</title>
+</head>
+<body>
+  <!--header#header>section.search(input[type="text"]+span+ul.often_search>li(>a[href="#"])*3)
+  +section.event_banner>h2(>a[href="#"]>img)+p(span.number+span.slider)-->
+  <header id="header">
+    <section class="search">
+      <input type="text" id="search_bar" placeholder="무엇을 찾고 계시나요?">
+      <span class="xi-search"></span>
+      <ul class="often_search">
+        <li><a href="#">자격득실확인서</a></li>
+        <li><a href="#">납부확인서</a></li>
+        <li><a href="#">건강보험자격득실..</a></li>
+      </ul>
+    </section>
+    <section class="event_banner">
+      <div class="event">
+        <a href="#">
+          <span>서로의 일상을 지키는</span>
+          <span>착한 마스크 사용법 캠페인</span>
+          <span class="event_con">자세히 보기</span>
+        </a>
+        <p>
+        <span class="number">/</span>
+        <span class="pause"><i class="xi-pause"></i></span>
+        </p>
+      </div>
+    </section>
+  </header>
+  <!--section.depth_1>span.menu{방문자별 맞춤 메뉴}+(input[type="radio"]+label+ul.menu>li(a[href="#"](>i.#)+p(>span*2))*8)*2-->
+  <section id="depth_1">
+    <div class="wrap">
+      <span class="menu">방문자별 맞춤 메뉴</span>
+      <input type="radio" name="who" id="gaein" checked>
+      <label for="gaein">개인</label>
+      <ul class="menu_ul" id="menu_gray">
+        <li>
+          <a href="#"><i class="xi-library"></i></a>
+          <p>
+            <span>자격득실</span>
+            <span>확인서발급</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-book-o"></i></a>
+          <p>
+            <span>환급금</span>
+            <span>조회신청</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-credit-card"></i></a>
+          <p>
+            <span>보험료</span>
+            <span>조회납부</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-box"></i></a>
+          <p>
+            <span>본인부담</span>
+            <span>상환액조회</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-calculator"></i></a>
+          <p>
+            <span>보험료</span>
+            <span>계산기</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-hospital"></i></a>
+          <p>
+            <span>재난적의료비</span>
+            <span>지원안내</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-spa"></i></a>
+          <p>
+            <span>건강검진</span>
+            <span>대상조회</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-medicine"></i></a>
+          <p>
+            <span>가족</span>
+            <span>건강관리</span>
+          </p>
+        </li>
+      </ul>
+      <input type="radio" name="who" id="saup">
+      <label for="saup">사업장</label>
+      <ul class="menu_ul" id="menu_yellow">
+        <li>
+          <a href="#"><i class="xi-library"></i></a>
+          <p>
+            <span>자격득실</span>
+            <span>확인서발급</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-book-o"></i></a>
+          <p>
+            <span>환급금</span>
+            <span>조회신청</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-credit-card"></i></a>
+          <p>
+            <span>보험료</span>
+            <span>조회납부</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-box"></i></a>
+          <p>
+            <span>본인부담</span>
+            <span>상환액조회</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-calculator"></i></a>
+          <p>
+            <span>보험료</span>
+            <span>계산기</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-hospital"></i></a>
+          <p>
+            <span>재난적의료비</span>
+            <span>지원안내</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-spa"></i></a>
+          <p>
+            <span>건강검진</span>
+            <span>대상조회</span>
+          </p>
+        </li>
+        <li>
+          <a href="#"><i class="xi-medicine"></i></a>
+          <p>
+            <span>가족</span>
+            <span>건강관리</span>
+          </p>
+        </li>
+      </ul>
+      <div class="BG"></div>
+    </div>
+  </section>
+  <!--section.main_banner>div.unit(span.num+span)+div.banner>a+div*3-->
+  <section id="main_banner">
+    <div class="unit">
+      <span class="num">/</span>
+      <span class="xi-pause"></span>
+    </div>
+    <div class="banner">
+      <div class="banner_left">
+        <span class="leftbox"></span>
+      </div>
+      <div class="banner_center">
+          <p>안녕하세요</p>
+          <h2>공단홈페이지 방문을 환영합니다.</h2>
+      </div>
+      <div class="banner_right">
+        <span class="rightbox"></span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

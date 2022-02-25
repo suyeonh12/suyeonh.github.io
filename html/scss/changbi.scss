@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import "./_mixin.scss";
+
+@font-face {
+     font-family: 'KOMACON';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCC-eunyoung';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  font-family: 'Cafe24Oneprettynight';
+  font-size: 1.2rem;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  background-image: url('/img/portfolio/changbi/write_grass.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top_util{
+  width: 100vw;
+  background-color: rgba(255,255,255,0.3);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  span{
+    display: inline-block;
+    a{
+      display: block;
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+  .top_util_left{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: calc(40% - 4px);
+    span{
+      &:hover{
+        a{
+          color: #fff;
+        }
+      }
+      a{
+        padding: 0 2px;
+        font-weight: 600;
+      }
+      .kor{
+        color: #fff;
+      }
+    }
+  }
+  .top_util_middle{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: calc(20% - 4px);
+    span{
+      a{
+        &:hover{
+          img{
+            transform: scale(1.1);
+          }
+        }
+        img{
+          display: block;
+          width: 100px;
+          margin: 0 auto;
+          transition: 0.5s;
+        }
+      }
+    }
+
+  }
+  .top_util_right{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    width: calc(40% - 4px);
+    .util{
+      margin-left: 15px;
+      span{
+        &:hover{
+          a{
+            color: #fff;
+            text-shadow: 0 0 2px #fff;
+          }
+        }
+        a{
+          padding: 0 5px;
+          i{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+#header{
+  position: absolute;
+  background-color: #81c3de;
+  width: 300px;
+  left: 0;
+  height: calc(100% - 56px);
+  text-align: center;
+  top: 56px;
+  .hamburger{
+    left: 100%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #81c3de;
+    box-sizing: border-box;
+    padding: 10px 7px;
+    top: 0;
+    .line{
+      height: 4px;
+      background-color: #fff;
+      &:nth-child(2){
+        margin: 5px auto;
+      }
+    }
+  }
+  #menu{
+    h1{
+      padding: 20px;
+      a{
+        display: block;
+        img{
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .menu-inner{
+      width: 70%;
+      position: sticky;
+      margin: 20px auto;
+      ul{
+        li{
+          a{
+            display: block;
+            color : #fff;
+          }
+        }
+      }
+      .depth_01{
+        padding-bottom: 20px;
+        li{
+          display: inline-block;
+          width: calc(40% - 4px);
+          a{
+            font-size: 1.5rem;
+            line-height: 35px;
+          }
+        }
+      }
+      .depth_02{
+        li{
+          a{
+            font-size: 1.2rem;
+            text-align: left;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+#main{
+  text-align: center;
+  padding-left: 300px;
+  transform: translateY(145px);
+  .box_container{
+    display: inline-block;
+    width: 920px;
+    vertical-align: top;
+    .box_wrap{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .box_wrap_01{
+      width: 408px;
+      margin-bottom: 5px;
+      .box{
+        height: 147.5px;
+      }
+    }
+    .box_wrap_02{
+      width: 612px;
+      margin-left: -2px;
+      .box{
+        margin-bottom: 5px;
+        height: 147.5px;
+      }
+    }
+    #box_01{
+      width: 300px;
+      height: 300px;
+      margin-bottom: 5px;
+      background: rgba(42, 152, 197, 0.9);
+    }
+    #box_02{
+      width: 406px;
+      margin-bottom: 5px;
+      background: rgba(241, 146, 146, 0.9);
+    }
+    #box_03{
+      width: 200px;
+      background: rgba(25, 144, 133, 0.9);
+    }
+    #box_04{
+      width: 200px;
+      background: rgba(220, 147, 72, 0.9);
+    }
+    #box_05{
+      width: 200px;
+      height: 300px;
+      background: rgba(107, 69, 185, 0.9);
+    }
+    #box_06{
+      width: 252px;
+      background: rgba(173, 76, 76, 0.9);
+    }
+    #box_07{
+      width: 352px;
+      background: rgba(23, 38, 123, 0.9);
+    }
+    #box_08{
+      width: 352px;
+      background: rgba(96, 125, 139, 0.9);
+    }
+    #box_09{
+      width: 252px;
+      background: rgba(230, 216, 111, 0.9);
+    }
+    #box_10{
+      width: 300px;
+      height: 300px;
+      background: rgba(100, 134, 195, 0.9);
+    }
+  }
+  #box_11{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 605px;
+    display: inline-block;
+    margin: 0 1px;
+    border: solid 4px rgba(255,255,255,0.5);
+    box-sizing: border-box;
+    padding-top: 230px;
+    background: rgba(84, 140, 99, 0.9);
+  }
+  .box{
+    display: inline-block;
+    margin: 0 1px;
+    border: solid 4px rgba(255,255,255,0.5);
+    box-sizing: border-box;
+    p{
+      span{
+        display: block;
+        color: #fff;
+      }
+      .category{
+        font-size: 1.6rem;
+        line-height: 35px;
+        padding-top: 30px;
+      }
+      .amount{
+        font-size: 2.5rem;
+        line-height: 50px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  #box_01, #box_05, #box_10{
+    padding-top: 80px;
+  }
+}

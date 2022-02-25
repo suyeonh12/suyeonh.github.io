@@ -1,0 +1,201 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  outline: 0;
+}
+/**-----------join start----------**/
+input{display: inline-block;}
+
+#join{
+  background-color: rgba(0,0,0,0.85);
+  padding: 100px 0;
+}
+#join form{
+  width: 1080px;
+  margin: 0 auto;
+}
+#join fieldset{
+  border: solid 2px #8729f7;
+  box-shadow: inset 0 0 5px 1px #994af7, 0 0 5px 1px #994af7;
+}
+#join form legend{
+  margin: 30px auto;
+  font-size: 18px;
+  font-weight: bold;
+  background-color:  #262626;
+  padding: 0 10px;
+  color: #fff;
+}
+#join form p{
+  width: 900px;
+  margin: 0 auto;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fff;
+  border-top: solid 0.5px #aaa;
+  border-left: solid 0.5px #aaa;
+  border-right: solid 0.5px #aaa;
+}
+
+#join form p .join{
+  display: inline-block;
+  width: 150px;
+  text-indent: 10px;
+  line-height: 23px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#join form p small{
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+#join form .join_btn{
+  display: block;
+  margin: 10px auto;
+  width: 60px;
+  height: 39px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+#join input[type="text"],
+#join input[type="password"],
+#join select{
+  text-align: center;
+  background-color: #eee;
+  line-height: 35px;
+  width: 320px;
+  border: 0;
+}
+
+#join #check_box{
+  vertical-align: middle;
+}
+#join input[type=checkbox]{
+  vertical-align: middle;
+}
+
+#join select{
+  height: 35px;
+}
+
+#join input[type=radio],
+#join input[type=checkbox]{
+  margin: 0 10px;
+}
+
+#join input[type=radio]:checked + label,
+#join input[type=checkbox]:checked + label{
+  color: #fff;
+  border: solid 1px #650fff;
+  box-shadow: 0 0 10px #650fff;
+}
+
+#join input,#join textarea,#join select{
+  font-size: 16px;
+}
+#join label{
+  background-color: transparent;
+  text-align: center;
+  display: inline-block;
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  border: solid 1px #fff;
+}
+
+#join label[for="none"]{
+  width: 90px;
+  height: 34px;
+  line-height: 34px;
+}
+#join input[type="date"]{
+  width: 186px;
+}
+#join label[for="IT"],
+#join label[for="none"] {margin: 0;}
+
+#join input[name=etc]{
+  width: 146px;
+  line-height: 28px;
+}
+
+#join form textarea{
+  width: 420px;
+  display: block;
+  margin: 15px auto;
+  text-indent: 5px;
+}
+
+#join .phone_box{}
+#join .phone_box .phone{
+  width: 65px;
+}
+#join .phone_box input{
+  width: 80px;
+}
+
+#join .zipcode input[id="zipcode"]{
+  width: 120px;
+}
+#join form .zipcode #postcodify_search_button{
+  border: solid 0.5px #a973ff;
+  background-color: #fff;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+}
+
+#join .line3 input{
+  width: 320px;
+}
+#join .zipcode .line3{
+  display: block;
+  margin-left: 155px;
+}
+#join .zipcode .line4{
+  display: block;
+  margin-left: 155px;
+}
+#join .zipcode .line4 input{
+  width: 650px;
+}
+#join #str_email01{
+  width: 180px;
+}
+#join #str_email02{
+  width: 200px;
+}
+#join #selectEmail{
+  width: 200px;
+}
+
+#join .line{}
+#join .line2{
+  display: block;
+  margin-left: 155px;
+}
+#join .line2 input[id="my_etc"]{
+  line-height: 30px;
+  width: 250px;
+  position: relative;
+  bottom: 3px;
+}
+#join .form_end{
+  border-bottom: solid 0.5px #aaa;
+  margin-bottom: 30px;
+}
+#join #join_btn{
+  display: block;
+  margin: 50px auto 0;
+  border: 0;
+  padding: 10px 50px;
+  background-color: #884cf2;
+  box-shadow: 0 0 4px #884cf2;
+  color: #fff;
+}
+/**-----------join end----------**/

@@ -1,0 +1,106 @@
+<?php include_once('../layout/header.html'); ?>
+<section id="comunity_wrap">
+  <div class="comunity_head_div">
+    <h2 class="comunity">상품신청</h2>
+    <p>
+      <span>원하시는 상품을 신청하실 수 있습니다.</span>
+      <span>소중한 의견 감사드립니다.</span>
+    </p>
+  </div>
+  <div class="comunity_section">
+    <ul class="request_box">
+      <!--li.request_list(>span.num{0$}+p.request_info(>span.request_title+span.request_type)+span.request_date)*10-->
+      <li class="request_list" id="request_list_top">
+        <span class="num">번호</span>
+        <p class="request_info"><a class="request_title">제목</a><span class="request_type">분류</span></p>
+        <span class="request_date">날짜</span>
+        <span class="agree">추천 수</span>
+      </li>
+      <li class="request_list">
+        <span class="num">01</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">티악 TN-4D</a><span class="request_type">턴테이블</span></p>
+        <span class="request_date">2021.01.26</span>
+        <span class="agree">3</span>
+      </li>
+      <li class="request_list">
+        <span class="num">02</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">사운드룩 7080-BT요</a><span class="request_type">턴테이블</span></p>
+        <span class="request_date">2021.01.26</span>
+        <span class="agree">5</span>
+      </li>
+      <li class="request_list">
+        <span class="num">03</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">백예린 컴백앨범 부탁드려요</a><span class="request_type">LP</span></p>
+        <span class="request_date">2021.01.26</span>
+        <span class="agree">0</span>
+      </li>
+      <li class="request_list">
+        <span class="num">04</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">민수 - Minsu Is Confused / XXLove</a><span class="request_type">LP</span></p>
+        <span class="request_date">2021.01.27</span>
+        <span class="agree">10</span>
+      </li>
+      <li class="request_list">
+        <span class="num">05</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">올드 팝 LP</a><span class="request_type">LP</span></p>
+        <span class="request_date">2021.01.27</span>
+        <span class="agree">7</span>
+      </li>
+      <li class="request_list">
+        <span class="num">06</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">Coms 미니턴테이블</a><span class="request_type">턴테이블</span></p>
+        <span class="request_date">2021.01.27</span>
+        <span class="agree">3</span>
+      </li>
+      <li class="request_list">
+        <span class="num">07</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">백예린 - Every letter I sent you</a><span class="request_type">LP</span></p>
+        <span class="request_date">2021.01.27</span>
+        <span class="agree">1</span>
+      </li>
+      <li class="request_list">
+        <span class="num">08</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">스텔라장 LP</a><span class="request_type">LP</span></p>
+        <span class="request_date">2021.01.28</span>
+        <span class="agree">2</span>
+      </li>
+      <li class="request_list">
+        <span class="num">09</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">나훈아 LP 신청합니다</a><span class="request_type">LP</span></p>
+        <span class="request_date">2021.01.29</span>
+        <span class="agree">8</span>
+      </li>
+      <li class="request_list">
+        <span class="num">10</span>
+        <p class="request_info"><a href="/sub/request_board.html" class="request_title">심규선이요</a><span class="request_type">LP</span></p>
+        <span class="request_date">2021.01.29</span>
+        <span class="agree">5</span>
+      </li>
+    </ul>
+    <div class="comunity_pagination">
+      <a href="#"><i class="xi-angle-left"></i></a>
+      <a href="/sub/goods_LP.html">1</a>
+      <a href="#"><i class="xi-angle-right"></i></a>
+    </div>
+    <form class="request_search">
+      <select class="request_search_type">
+        <optgroup label="">
+          <option value="request_whole">전체</option>
+          <option value="request_lp">LP</option>
+          <option value="request_turntable">턴테이블</option>
+        </optgroup>
+      </select>
+      <select class="request_search_category">
+        <optgroup label="">
+          <option value="request_title">제목</option>
+          <option value="request_content">내용</option>
+          <option value="request_type">아이디</option>
+          <option value="title+content">제목+내용</option>
+        </optgroup>
+      </select>
+      <input id="request_input" type="search">
+      <input id="requestSearchBtn" type="submit" name="review_search" value="검색">
+    </form>
+  </div>
+</section>
+<?php include_once('../layout/footer.html'); ?>

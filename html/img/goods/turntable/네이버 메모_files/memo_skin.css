@@ -1,0 +1,732 @@
+@charset "UTF-8";
+/* NHN I&S Web Standardization Team rewindme 110127 */
+/* ***********
+	common
+************ */
+/* 좌측메뉴 spr - 밝은 스킨 */
+ul.menu .v_bar em,
+div.nav_mm .menu .cfrm_fd a:first-child,
+.ico_new_rec {
+    background-image: url(https://ssl.pstatic.net/static/pwe/memo/sp_memo_snb_light_150203.png);
+}
+
+/* skin light */
+.menu .cfrm_fd a {
+    color: #666666;
+}
+
+div.list_view .menu_alert {
+    color: #333;
+}
+
+.skin_lft_element,
+.skin_rgt_element {
+    height: 47px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 0 -50px;
+    background-repeat: no-repeat;
+}
+
+.skin_rgt_element {
+    left: auto;
+    right: 0;
+    background-position: 100% -100px;
+}
+
+/* 스킨 공통 요소 */
+.skin_white #nav_snb,
+div.ly_folder_drag {
+    background-color: #fff;
+}
+
+div.section_promotion img {
+    top: -121px;
+    margin-top: -50px;
+}
+
+/* 보더 컬러 */
+div.nav_major,
+div.set_name {
+    border-color: #e5e5e5;
+}
+
+div.list_menu ul li.line_loc,
+div.list_menu ul li.line_loc_top,
+div.list_menu ul li.drag_line_loc,
+div.list_menu ul li.drag_line_loc_top {
+    border-color: #333;
+}
+
+#lside,
+div.nav_mm {
+    border-color: #b4b4b4;
+}
+
+/* ***********
+	black
+************ */
+.skin_black .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/nm/bg_container_dh_150915.png);
+    background-color: #464854;
+}
+
+.skin_black .nav_mm .writenote .btn.write {
+    background-color: #676973;
+    border-color: #6b6d76;
+}
+
+.skin_black .set_name .ck_name .ico,
+.skin_black .menu .set_inp .input_text,
+.skin_black .nav_list .my_nav_list .menu,
+.skin_black .nav_list .my_nav_list .memo_list,
+.skin_black .nav_list .my_nav_list h3,
+.skin_black .nav_mm .writenote,
+.skin_black .nav_list,
+.skin_black .set_name,
+.skin_black .section_promotion a,
+.skin_black .nav_major {
+    border-color: #3d3f49;
+}
+
+.skin_black .menu .set_inp .input_text,
+.skin_black .nav_mm .nav_list h3 a,
+.skin_black .nav_mm .menu a,
+.skin_black .nav_list.list_view h3 .ml_t .ma,
+.skin_black .set_name .ck_name {
+    color: #eee;
+}
+
+.skin_black .nav_list .paginate a,
+.skin_black .nav_list .menu li a {
+    color: #cdcdce;
+}
+
+.skin_black .nav_list .paginate strong {
+    color: #00c73c;
+}
+
+.skin_black .scroll_zoom .selected .ma {
+    color: #00ba2e;
+}
+
+.skin_black .nav_list .my_nav_list .memo_list,
+.skin_black .nav_list .my_nav_list h3,
+.skin_black .nav_list .my_nav_list .menu {
+    background-color: #555661;
+}
+
+/* ***********
+	white
+************ */
+div#wrap.skin_white .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/nm/bg_container_dh_white_150915.png);
+    background-position: 0 0;
+}
+
+/* ***********
+	gray
+************ */
+.skin_gray .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/nm/bg_container_dh_blue_150915.png);
+    background-color: #464854;
+}
+
+.skin_gray .set_name .ck_name .ico,
+.skin_gray .nav_list .my_nav_list .menu,
+.skin_gray .nav_list .my_nav_list .memo_list,
+.skin_gray .nav_list .my_nav_list h3,
+.skin_gray .nav_mm .writenote,
+.skin_gray .nav_list,
+.skin_gray .set_name,
+.skin_gray .section_promotion a,
+.skin_gray .set_name .ck_name .ico,
+.skin_gray .nav_major {
+    border-color: #d1d1d1;
+}
+
+.skin_gray .nav_list .my_nav_list .memo_list,
+.skin_gray .nav_list .my_nav_list h3,
+.skin_gray .nav_list .my_nav_list .menu {
+    background-color: #f0f0f0;
+}
+
+/* ***********
+	pblue
+************ */
+.skin_pblue .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/nm/bg_container_dh_pblue_150915.png);
+    background-color: #f3f7fc;
+}
+
+.skin_pblue .set_name .ck_name .ico,
+.skin_pblue .nav_list .my_nav_list .menu,
+.skin_pblue .nav_list .my_nav_list .memo_list,
+.skin_pblue .nav_list .my_nav_list h3,
+.skin_pblue .nav_mm .writenote,
+.skin_pblue .nav_list,
+.skin_pblue .set_name,
+.skin_pblue .section_promotion a,
+.skin_pblue .nav_major {
+    border-color: #dadee2;
+}
+
+.skin_pblue .nav_list .my_nav_list .memo_list,
+.skin_pblue .nav_list .my_nav_list h3,
+.skin_pblue .nav_list .my_nav_list .menu {
+    background-color: #f7f9fd;
+}
+
+/* ***********
+	ppink
+************ */
+.skin_ppink .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/nm/bg_container_dh_ppink_150915.png);
+    background-color: #fcf2f2;
+}
+
+.skin_ppink .set_name .ck_name .ico,
+.skin_ppink .nav_list .my_nav_list .menu,
+.skin_ppink .nav_list .my_nav_list .memo_list,
+.skin_ppink .nav_list .my_nav_list h3,
+.skin_ppink .nav_mm .writenote,
+.skin_ppink .nav_list,
+.skin_ppink .set_name,
+.skin_ppink .section_promotion a,
+.skin_ppink .nav_major {
+    border-color: #d1d1d1;
+}
+
+.skin_ppink .nav_list .my_nav_list .memo_list,
+.skin_ppink .nav_list .my_nav_list h3,
+.skin_ppink .nav_list .my_nav_list .menu {
+    background-color: #fdf5f5;
+}
+
+/* *******************
+	theme skin common
+********************** */
+.skin_kitsch .skin_lft_element,
+.skin_kitsch .skin_rgt_element,
+.skin_indipink .skin_lft_element,
+.skin_indipink .skin_rgt_element,
+.skin_ashorange .skin_lft_element,
+.skin_ashorange .skin_rgt_element,
+.skin_raindrop .skin_lft_element,
+.skin_raindrop .skin_rgt_element,
+.skin_marine .skin_lft_element,
+.skin_marine .skin_rgt_element,
+.skin_forest .skin_lft_element,
+.skin_forest .skin_rgt_element,
+.skin_sky .skin_lft_element,
+.skin_sky .skin_rgt_element,
+.skin_propose .skin_lft_element,
+.skin_propose .skin_rgt_element,
+.skin_rain .skin_lft_element,
+.skin_rain .skin_rgt_element,
+.skin_twinkle .skin_lft_element,
+.skin_twinkle .skin_rgt_element,
+null {
+    display: block;
+}
+
+.skin_kitsch div#header,
+.skin_indipink div#header,
+.skin_ashorange div#header,
+.skin_raindrop div#header,
+.skin_marine div#header,
+.skin_forest div#header,
+.skin_sky div#header,
+.skin_propose div#header,
+.skin_rain div#header,
+.skin_twinkle div#header,
+null {
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-color: transparent;
+}
+
+.skin_kitsch .nav_mm .writenote .write,
+.skin_indipink .nav_mm .writenote .write,
+.skin_ashorange .nav_mm .writenote .write,
+.skin_raindrop .nav_mm .writenote .write,
+.skin_marine .nav_mm .writenote .write,
+.skin_forest .nav_mm .writenote .write,
+.skin_sky .nav_mm .writenote .write,
+.skin_propose .nav_mm .writenote .write,
+.skin_rain .nav_mm .writenote .write,
+.skin_twinkle .nav_mm .writenote .write,
+null {
+    background-position: -200px -150px;
+}
+
+/* ***********
+	kitsch
+************ */
+.skin_kitsch .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_kitsch.png);
+    background-color: #fcf2f2;
+}
+
+.skin_kitsch .nav_mm .writenote .btn.write {
+    background-color: #db443c;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_kitsch .set_name .ck_name .ico,
+.skin_kitsch .nav_list .my_nav_list .menu,
+.skin_kitsch .nav_list .my_nav_list .memo_list,
+.skin_kitsch .nav_list .my_nav_list h3,
+.skin_kitsch .nav_mm .writenote,
+.skin_kitsch .nav_list,
+.skin_kitsch .set_name,
+.skin_kitsch .section_promotion a,
+.skin_kitsch .nav_major {
+    border-color: #dedcd9;
+}
+
+.skin_kitsch .nav_list .my_nav_list .memo_list,
+.skin_kitsch .nav_list .my_nav_list h3,
+.skin_kitsch .nav_list .my_nav_list .menu {
+    background-color: #F8F8F7;
+}
+
+.skin_kitsch div#header,
+.skin_kitsch .skin_lft_element,
+.skin_kitsch .skin_rgt_element,
+.skin_kitsch .btn_workset a,
+.skin_kitsch .btn_workset a strong,
+div.skin_kitsch .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_kitsch_v2.png);
+}
+
+div.skin_kitsch .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #587b88;
+    background-position: 0 -1px;
+}
+
+/* ***********
+	indipink
+************** */
+.skin_indipink .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_indipink.png);
+    background-color: #fcf2f2;
+}
+
+.skin_indipink .nav_mm .writenote .btn.write {
+    background-color: #d88c8e;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_indipink .set_name .ck_name .ico,
+.skin_indipink .nav_list .my_nav_list .menu,
+.skin_indipink .nav_list .my_nav_list .memo_list,
+.skin_indipink .nav_list .my_nav_list h3,
+.skin_indipink .nav_mm .writenote,
+.skin_indipink .nav_list,
+.skin_indipink .set_name,
+.skin_indipink .section_promotion a,
+.skin_indipink .set_name .ck_name .ico,
+.skin_indipink .nav_major {
+    border-color: #d7d5cc;
+}
+
+.skin_indipink .nav_list .my_nav_list .memo_list,
+.skin_indipink .nav_list .my_nav_list h3,
+.skin_indipink .nav_list .my_nav_list .menu {
+    background-color: #f2f1eb;
+}
+
+.skin_indipink div#header,
+.skin_indipink .skin_lft_element,
+.skin_indipink .skin_rgt_element,
+.skin_indipink .btn_workset a,
+.skin_indipink .btn_workset a strong,
+div.skin_indipink .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_indipink.png);
+}
+
+div.skin_indipink .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #ab6f73;
+}
+
+/* ***********
+	ashorange
+************** */
+.skin_ashorange .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_ashorange.png);
+    background-color: #fcf2f2;
+}
+
+.skin_ashorange .nav_mm .writenote .btn.write {
+    background-color: #bdb8b3;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_ashorange .set_name .ck_name .ico,
+.skin_ashorange .nav_list .my_nav_list .menu,
+.skin_ashorange .nav_list .my_nav_list .memo_list,
+.skin_ashorange .nav_list .my_nav_list h3,
+.skin_ashorange .nav_mm .writenote,
+.skin_ashorange .nav_list,
+.skin_ashorange .set_name,
+.skin_ashorange .section_promotion a,
+.skin_ashorange .nav_major {
+    border-color: #dddcda;
+}
+
+.skin_ashorange .nav_list .my_nav_list .memo_list,
+.skin_ashorange .nav_list .my_nav_list h3,
+.skin_ashorange .nav_list .my_nav_list .menu {
+    background-color: #fbfaf9;
+}
+
+.skin_ashorange div#header,
+.skin_ashorange .skin_lft_element,
+.skin_ashorange .skin_rgt_element,
+.skin_ashorange .btn_workset a,
+.skin_ashorange .btn_workset a strong,
+div.skin_ashorange .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_ashorange.png);
+}
+
+div.skin_ashorange .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #9d9892;
+}
+
+.skin_ashorange .skin_rgt_element {
+    min-width: 407px;
+}
+
+/* **********
+	raindrop
+************* */
+.skin_raindrop .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_raindrop.png);
+    background-color: #fcf2f2;
+}
+
+.skin_raindrop .nav_mm .writenote .btn.write {
+    background-color: #4678a8;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_raindrop .set_name .ck_name .ico,
+.skin_raindrop .nav_list .my_nav_list .menu,
+.skin_raindrop .nav_list .my_nav_list .memo_list,
+.skin_raindrop .nav_list .my_nav_list h3,
+.skin_raindrop .nav_mm .writenote,
+.skin_raindrop .nav_list,
+.skin_raindrop .set_name,
+.skin_raindrop .section_promotion a,
+.skin_raindrop .nav_major {
+    border-color: #d2d6d8;
+}
+
+.skin_raindrop .nav_list .my_nav_list .memo_list,
+.skin_raindrop .nav_list .my_nav_list h3,
+.skin_raindrop .nav_list .my_nav_list .menu {
+    background-color: #f7f9fd;
+}
+
+.skin_raindrop div#header,
+.skin_raindrop .skin_lft_element,
+.skin_raindrop .skin_rgt_element,
+.skin_raindrop .btn_workset a,
+.skin_raindrop .btn_workset a strong,
+div.skin_raindrop .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_raindrop.png);
+}
+
+div.skin_raindrop .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #336186;
+}
+
+.skin_raindrop .skin_rgt_element {
+    min-width: 410px;
+}
+
+/* **********
+	marine
+************* */
+.skin_marine .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_marine.png);
+    background-color: #fcf2f2;
+}
+
+.skin_marine .nav_mm .writenote .btn.write {
+    background-color: #4689c4;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_marine .set_name .ck_name .ico,
+.skin_marine .nav_list .my_nav_list .menu,
+.skin_marine .nav_list .my_nav_list .memo_list,
+.skin_marine .nav_list .my_nav_list h3,
+.skin_marine .nav_mm .writenote,
+.skin_marine .nav_list,
+.skin_marine .set_name,
+.skin_marine .section_promotion a,
+.skin_marine .nav_major {
+    border-color: #d8dde1;
+}
+
+.skin_marine .nav_list .my_nav_list .memo_list,
+.skin_marine .nav_list .my_nav_list h3,
+.skin_marine .nav_list .my_nav_list .menu {
+    background-color: #f7f9fd;
+}
+
+.skin_marine div#header,
+.skin_marine .skin_lft_element,
+.skin_marine .skin_rgt_element,
+.skin_marine .btn_workset a,
+.skin_marine .btn_workset a strong,
+div.skin_marine .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_marine.png);
+}
+
+div.skin_marine .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #336996;
+}
+
+/* **********
+	forest
+************* */
+.skin_forest .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_forest.png);
+    background-color: #fcf2f2;
+}
+
+.skin_forest .nav_mm .writenote .btn.write {
+    background-color: #317a7c;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_forest .set_name .ck_name .ico,
+.skin_forest .nav_list .my_nav_list .menu,
+.skin_forest .nav_list .my_nav_list .memo_list,
+.skin_forest .nav_list .my_nav_list h3,
+.skin_forest .nav_mm .writenote,
+.skin_forest .nav_list,
+.skin_forest .set_name,
+.skin_forest .section_promotion a,
+.skin_forest .nav_major {
+    border-color: #dfddd8;
+}
+
+.skin_forest .nav_list .my_nav_list .memo_list,
+.skin_forest .nav_list .my_nav_list h3,
+.skin_forest .nav_list .my_nav_list .menu {
+    background-color: #fcfbf8;
+}
+
+.skin_forest div#header,
+.skin_forest .skin_lft_element,
+.skin_forest .skin_rgt_element,
+.skin_forest .btn_workset a,
+.skin_forest .btn_workset a strong {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_forest.png);
+}
+
+div.skin_forest .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #1d2d37;
+}
+
+.skin_forest div#header, div.skin_forest .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-color: #317a7c;
+}
+
+.skin_forest .skin_rgt_element {
+    min-width: 438px;
+}
+
+/* **********
+	sky
+************* */
+.skin_sky .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_sky.png);
+    background-color: #fcf2f2;
+}
+
+.skin_sky .nav_mm .writenote .btn.write {
+    background-color: #4193cc;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_sky .set_name .ck_name .ico,
+.skin_sky .nav_list .my_nav_list .menu,
+.skin_sky .nav_list .my_nav_list .memo_list,
+.skin_sky .nav_list .my_nav_list h3,
+.skin_sky .nav_mm .writenote,
+.skin_sky .nav_list,
+.skin_sky .set_name,
+.skin_sky .section_promotion a,
+.skin_sky .nav_major {
+    border-color: #d4dbe1;
+}
+
+.skin_sky .nav_list .my_nav_list .memo_list,
+.skin_sky .nav_list .my_nav_list h3,
+.skin_sky .nav_list .my_nav_list .menu {
+    background-color: #f7f9fd;
+}
+
+.skin_sky div#header,
+.skin_sky .skin_lft_element,
+.skin_sky .skin_rgt_element,
+.skin_sky .btn_workset a,
+.skin_sky .btn_workset a strong {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_sky.png);
+}
+
+div.skin_sky .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #2c6d96;
+}
+
+.skin_sky div#header,
+div.skin_sky .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-color: #4193cc;
+}
+
+.skin_sky .skin_rgt_element {
+    min-width: 410px;
+}
+
+/* **********
+	propose
+************* */
+.skin_propose .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_propose.png);
+    background-color: #fcf2f2;
+}
+
+.skin_propose .nav_mm .writenote .btn.write {
+    background-color: #6c92ac;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_propose .set_name .ck_name .ico,
+.skin_propose .nav_list .my_nav_list .menu,
+.skin_propose .nav_list .my_nav_list .memo_list,
+.skin_propose .nav_list .my_nav_list h3,
+.skin_propose .nav_mm .writenote,
+.skin_propose .nav_list,
+.skin_propose .set_name,
+.skin_propose .section_promotion a,
+.skin_propose .nav_major {
+    border-color: #d3dadb;
+}
+
+.skin_propose .nav_list .my_nav_list .memo_list,
+.skin_propose .nav_list .my_nav_list h3,
+.skin_propose .nav_list .my_nav_list .menu {
+    background-color: #f3f8f8;
+}
+
+.skin_propose div#header,
+.skin_propose .skin_lft_element,
+.skin_propose .skin_rgt_element,
+.skin_propose .btn_workset a,
+.skin_propose .btn_workset a strong,
+div.skin_propose .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_propose.png);
+}
+
+div.skin_propose .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #4e6a7d;
+}
+
+/* **********
+	rain
+************* */
+.skin_rain .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_rain.png);
+    background-color: #fcf2f2;
+}
+
+.skin_rain .nav_mm .writenote .btn.write {
+    background-color: #658cab;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_rain .set_name .ck_name .ico,
+.skin_rain .nav_list .my_nav_list .menu,
+.skin_rain .nav_list .my_nav_list .memo_list,
+.skin_rain .nav_list .my_nav_list h3,
+.skin_rain .nav_mm .writenote,
+.skin_rain .nav_list,
+.skin_rain .set_name,
+.skin_rain .section_promotion a,
+.skin_rain .nav_major {
+    border-color: #dadada;
+}
+
+.skin_rain .nav_list .my_nav_list .memo_list,
+.skin_rain .nav_list .my_nav_list h3,
+.skin_rain .nav_list .my_nav_list .menu {
+    background-color: #fff;
+}
+
+.skin_rain div#header,
+.skin_rain .skin_lft_element,
+.skin_rain .skin_rgt_element,
+.skin_rain .btn_workset a,
+.skin_rain .btn_workset a strong,
+div.skin_rain .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_rain.png);
+}
+
+div.skin_rain .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #818b96;
+}
+
+/* **********
+	twinkle
+************* */
+.skin_twinkle .nav_mm {
+    background-image: url(https://ssl.pstatic.net/static/pwe/common/skin/bg_skin_twinkle.png);
+    background-color: #fcf2f2;
+}
+
+.skin_twinkle .nav_mm .writenote .btn.write {
+    background-color: #4689c4;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.skin_twinkle .set_name .ck_name .ico,
+.skin_twinkle .nav_list .my_nav_list .menu,
+.skin_twinkle .nav_list .my_nav_list .memo_list,
+.skin_twinkle .nav_list .my_nav_list h3,
+.skin_twinkle .nav_mm .writenote,
+.skin_twinkle .nav_list,
+.skin_twinkle .set_name,
+.skin_twinkle .section_promotion a,
+.skin_twinkle .nav_major {
+    border-color: #dadada;
+}
+
+.skin_twinkle .nav_list .my_nav_list .memo_list,
+.skin_twinkle .nav_list .my_nav_list h3,
+.skin_twinkle .nav_list .my_nav_list .menu {
+    background-color: #fff;
+}
+
+.skin_twinkle div#header,
+.skin_twinkle .skin_lft_element,
+.skin_twinkle .skin_rgt_element,
+.skin_twinkle .btn_workset a,
+.skin_twinkle .btn_workset a strong,
+div.skin_twinkle .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    background-image: url(https://ssl.pstatic.net/static/memo/skin/sp_skin_twinkle.png);
+}
+
+div.skin_twinkle .gnb_area .gnb_list_box.gnb_more_area .gnb_last ul {
+    border-color: #1a4673;
+}
+
+.skin_twinkle .skin_rgt_element {
+    min-width: 447px;
+}

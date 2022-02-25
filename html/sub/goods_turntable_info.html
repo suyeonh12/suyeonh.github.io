@@ -1,0 +1,316 @@
+<?php include_once('../layout/header.html'); ?>
+<section class="goods_info">
+  <div class="goods_info_head">
+    <div class="head_thumbnail">
+      <div class="thumb_img">
+        <img id="thumbBig" src="/img/goods/turntable/turn_24.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color">
+      </div>
+      <ul class="thumb_list">
+        <li>
+          <img class="thumb" src="/img/goods/turntable/turn_24.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color">
+        </li>
+        <li>
+          <img class="thumb" src="/img/goods/turntable/turn_24_2.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color">
+        </li>
+        <li>
+          <img class="thumb" src="/img/goods/turntable/turn_24_3.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color">
+        </li>
+        <li>
+          <img class="thumb" src="/img/goods/turntable/turn_24_4.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color">
+        </li>
+      </ul>
+    </div>
+    <div class="head_goodsinfo">
+      <form name="form" method="get">
+        <h3><a href="#">[ENWELL] 감성 블루투스 레코드 턴테이블 6 color</a></h3>
+        <dl class="basic_info">
+          <dt class="info_title">제조사</dt><dd class="info_con"><a href="#none">ENWELL</a></dd>
+        </dl>
+        <dl class="count_info">
+          <dt class="info_title">정가</dt><dd class="info_con line">57,900</dd>
+          <dt class="info_title">대여가</dt><dd class="info_con color_pp">22,000<input type=hidden name="sell_price" value="22000"></dd>
+          <dt class="info_title">적립금</dt><dd class="info_con">220원(1%) + 멤버십(3~10%)</dd>
+          <dt class="info_title">배송비</dt><dd class="info_con">2500원 (50,000원 이상 배송비 무료)</dd>
+          <dt class="info_title">수령 예상일</dt><dd class="info_con">지금 택배로 주문하면 2021년 1월 5일 출고</dd>
+        </dl>
+        <dl class="review_info">
+          <dt class="info_title">만족도</dt>
+          <dd class="info_con">
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            9.8
+          </dd>
+          <dt class="info_title">주문 수</dt><dd class="info_con">1,568</dd>
+          <dt class="info_title">리뷰 수</dt><dd class="info_con">3</dd>
+        </dl>
+        <dl>
+          <dt class="info_title">색상</dt>
+          <dd class="info_con">
+            <select id="turntable_option" name="turntable_option">
+              <option value="#" selected disabled="">컬러</option>
+              <option value="Khaki">카키</option>
+              <option value="Beige">베이지</option>
+              <option value="Pink">핑크</option>
+              <option value="Babypink">베이비핑크</option>
+              <option value="Black">블랙</option>
+              <option value="Brown">브라운</option>
+            </select>
+          </dd>
+        </dl>
+        <p class="order">
+          <span class="amount">상품수량 </span>
+          <input type="button" id="minusBtn" value=" - " onclick="del();">
+          <input id="goodsCount" type="text" name="amount" value="1" size="3" onchange="change();">
+          <input type="button" id="plusBtn" value=" + " onclick="add();"><br/>
+        </p>
+        <p class="order">
+          <span>총 상품금액</span>
+          <input id="countResult" type="text" name="sum" size="11" readonly><span> 원</span>
+        </p>
+        <span class="button" id="turntable_button">
+          <a href="/sub/cart.html" class="stack_cart">장바구니</a>
+          <a href="/sub/order.html" class="perchase">구매하기</a>
+        </span>
+      </form>
+    </div>
+    <div class="ad_banner">
+      <a href="/sub/my_first_turntable.html" class="ad_1">나에게 맞는 턴테이블 찾기</a>
+      <a href="/sub/my_first_turntable.html" class="ad_2">소중한 LP, 오래 듣는 비법 알려드립니다</a>
+    </div>
+    <div class="goods_detail">
+      <dl>
+        <dt class="detail_title">기본정보</dt>
+        <dd class="detail_con">
+          <ul class="basic_info">
+            <li>
+              <span class="tt">품목</span>
+              <span class="con">턴테이블, 휴대용 턴테이블</span>
+            </li>
+            <li>
+              <span class="tt">스피커 유무</span>
+              <span class="con">스피커 내장</span>
+            </li>
+            <li>
+              <span class="tt">네트워크</span>
+              <span class="con">블루투스</span>
+            </li>
+            <li>
+              <span class="tt">LP 속도조절</span>
+              <span class="con">3단계</span>
+            </li>
+            <li>
+              <span class="tt">RPM</span>
+              <span class="con">33, 45, 78</span>
+            </li>
+            <li>
+              <span class="tt">단자</span>
+              <span class="con">RCA, 3.5mm</span>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="detail_title">제품소개</dt>
+        <dd class="detail_con">
+          <p class="turntable_info">
+            <img src="/img/goods/turntable/turn_24_info.gif" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color 상세">
+            <img src="/img/goods/turntable/turn_24_info_1.jpg" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color 상세">
+            <img src="/img/goods/turntable/turn_24_info_2.jpg" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color 상세">
+            <img src="/img/goods/turntable/turn_24_info_3.jpg" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color 상세">
+            <img src="/img/goods/turntable/turn_24_info_4.jpg" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color 상세">
+            <img src="/img/goods/turntable/turn_24_info_5.jpg" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color 상세">
+          </p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="detail_title">리뷰</dt>
+        <dd class="detail_con">
+          <span class="review_thumb"><img src="/img/main/turn_review_1.png" alt="리뷰 미리보기"></span>
+          <div class="ab_review">
+            <div class="rv_left">
+              <div class="rv_goods">
+                <a href="#none" class="rv_thumb"><img src="/img/goods/turntable/turn_24.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color"></a>
+                <div class="rv_goods_name">
+                  <a href="/sub/goods_turntable_info.html">[ENWELL]감성 블루투스 레코드 턴테이블 6 color</a>
+                  <span>22,000원</span>
+                  <div class="rv_info">
+                    <dl>
+                      <dt>리뷰 수</dt>
+                      <dd>3</dd>
+                    </dl>
+                    <dl>
+                      <dt>평점</dt>
+                      <dd>9.8</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="review_contents">
+                <span class="reviewer_img">
+                  <img src="/img/main/turn_review_1.png" alt="리뷰1">
+                </span>
+                <p class="ab_review_title">ㅎㅎ</p>
+                <p class="ab_review_con">
+                  <span>크리스마스💚🎄💚</span>
+                </p>
+              </div>
+            </div>
+            <div class="rv_right">
+              <span class="xi-close ab_review_closeBtn"></span>
+              <div class="reviewer_info">
+                <h4><strong>oenjiean</strong>님의 리뷰</h4>
+                <p class="star">
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                </p>
+                <div class="rv_info">
+                  <dl>
+                    <dt>리뷰 조회수</dt>
+                    <dd>296</dd>
+                  </dl>
+                  <dl>
+                    <dt>이 리뷰가 좋아요</dt>
+                    <dd>15</dd>
+                  </dl>
+                  <dl>
+                    <dt>리뷰 작성일</dt>
+                    <dd>2021.01.5 18:15:17</dd>
+                  </dl>
+                </div>
+                <h5 class="other_review">다른 상품 리뷰</h5>
+                <p class="other_review_info">아직 다른 상품 리뷰가 없습니다.</p>
+              </div>
+            </div>
+          </div>
+          <span class="review_thumb"><img src="/img/main/turn_review_2.png" alt="리뷰 미리보기"></span>
+          <div class="ab_review">
+            <div class="rv_left">
+              <div class="rv_goods">
+                <a href="#none" class="rv_thumb"><img src="/img/goods/turntable/turn_24.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color"></a>
+                <div class="rv_goods_name">
+                  <a href="/sub/goods_turntable_info.html">[ENWELL]감성 블루투스 레코드 턴테이블 6 color</a>
+                  <span>22,000원</span>
+                  <div class="rv_info">
+                    <dl>
+                      <dt>리뷰 수</dt>
+                      <dd>3</dd>
+                    </dl>
+                    <dl>
+                      <dt>평점</dt>
+                      <dd>9.6</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="review_contents">
+                <span class="reviewer_img">
+                  <img src="/img/main/turn_review_2.png" alt="리뷰2">
+                </span>
+                <p class="ab_review_title">맘에 들어요</p>
+                <p class="ab_review_con">
+                  <span>내 방에서 가장 매력 있는 공간 🙂🙃</span>
+                </p>
+              </div>
+            </div>
+            <div class="rv_right">
+              <span class="xi-close ab_review_closeBtn"></span>
+              <div class="reviewer_info">
+                <h4><strong>alwalom1</strong>님의 리뷰</h4>
+                <p class="star">
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                </p>
+                <div class="rv_info">
+                  <dl>
+                    <dt>리뷰 조회수</dt>
+                    <dd>296</dd>
+                  </dl>
+                  <dl>
+                    <dt>이 리뷰가 좋아요</dt>
+                    <dd>15</dd>
+                  </dl>
+                  <dl>
+                    <dt>리뷰 작성일</dt>
+                    <dd>2020.11.26 18:15:17</dd>
+                  </dl>
+                </div>
+                <h5 class="other_review">다른 상품 리뷰</h5>
+                <p class="other_review_info">아직 다른 상품 리뷰가 없습니다.</p>
+              </div>
+            </div>
+          </div>
+          <span class="review_thumb"><img src="/img/main/turn_review_3.png" alt="리뷰 미리보기"></span>
+          <div class="ab_review">
+            <div class="rv_left">
+              <div class="rv_goods">
+                <a href="#none" class="rv_thumb"><img src="/img/goods/turntable/turn_24.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color"></a>
+                <div class="rv_goods_name">
+                  <a href="/sub/goods_turntable_info.html">[ENWELL]감성 블루투스 레코드 턴테이블 6 color</a>
+                  <span>22,000원</span>
+                  <div class="rv_info">
+                    <dl>
+                      <dt>리뷰 수</dt>
+                      <dd>3</dd>
+                    </dl>
+                    <dl>
+                      <dt>평점</dt>
+                      <dd>10.0</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="review_contents">
+                <span class="reviewer_img">
+                  <img src="/img/main/turn_review_3.png" alt="리뷰3">
+                </span>
+                <p class="ab_review_title">good</p>
+                <p class="ab_review_con">
+                  <span>좋습니다</span>
+                </p>
+              </div>
+            </div>
+            <div class="rv_right">
+              <span class="xi-close ab_review_closeBtn"></span>
+              <div class="reviewer_info">
+                <h4><strong>hsh0705</strong>님의 리뷰</h4>
+                <p class="star">
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                </p>
+                <div class="rv_info">
+                  <dl>
+                    <dt>리뷰 조회수</dt>
+                    <dd>296</dd>
+                  </dl>
+                  <dl>
+                    <dt>이 리뷰가 좋아요</dt>
+                    <dd>15</dd>
+                  </dl>
+                  <dl>
+                    <dt>리뷰 작성일</dt>
+                    <dd>2020.11.26 18:15:17</dd>
+                  </dl>
+                </div>
+                <h5 class="other_review">다른 상품 리뷰</h5>
+                <p class="other_review_info">아직 다른 상품 리뷰가 없습니다.</p>
+              </div>
+            </div>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<?php include_once('../layout/footer.html'); ?>

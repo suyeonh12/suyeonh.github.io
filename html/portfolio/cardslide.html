@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.waterwheelCarousel.min.js"></script>
+</head>
+<body>
+  <div id="carousel">
+  <img src="/img/portfolio/samsung.png" id="item-1" />
+  <img src="/img/portfolio/samsung.png" id="item-2" />
+  <img src="/img/portfolio/samsung.png" id="item-3" />
+  <img src="/img/portfolio/samsung.png" id="item-4" />
+  <img src="/img/portfolio/samsung.png" id="item-5" />
+  <img src="/img/portfolio/samsung.png" id="item-6" />
+  <img src="/img/portfolio/samsung.png" id="item-7" />
+  <img src="/img/portfolio/samsung.png" id="item-8" />
+  <img src="/img/portfolio/samsung.png" id="item-9" />
+  </div>
+  <a href="#" id="prev">Prev</a>
+  <a href="#" id="next">Next</a>
+  <style>
+
+  </style>
+  <script>
+  $(document).ready(function () {
+  var carousel = $("#carousel").waterwheelCarousel({
+    flankingItems: 3,
+  });
+
+  $('#prev').bind('click', function () {
+    carousel.prev();
+    return false
+  });
+
+  $('#next').bind('click', function () {
+    carousel.next();
+    return false;
+  });
+});
+  </script>
+</body>
+</html>

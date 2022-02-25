@@ -1,0 +1,124 @@
+<?php include_once('../layout/header_success.html'); ?>
+<section class="cart_wrap">
+  <h2 class="cart">구매하기</h2>
+  <div class="cart_section">
+    <p>suyeonh 고객님은 현재 <span class="grade_img"><img src="/img/grade5.png" alt="VVIP"></span>(VVIP) 혜택을 받으실 수 있습니다. </p>
+    <ul class="cart_list">
+      <li class="cart_list_top">
+        <span class="product">상품</span>
+        <span class="count">수량</span>
+        <span class="cost">가격</span>
+        <span class="mileage">적립금</span>
+        <span class="discount">즉시할인</span>
+      </li>
+      <li>
+        <span class="product">
+          <a href="/sub/goods_lp_info.html"><img src="/img/goods/lp/ost_1.jpg" alt="시네마천국 OST"></a>
+          엔니오 모리꼬네 - 시네마 천국 영화음악 [180G 블루 LP]
+        </span>
+        <span class="count">1</span>
+        <span class="cost">15,000</span>
+        <span class="mileage">1,650(1%+10%)</span>
+        <span class="discount">1,500(10%)</span>
+      </li>
+      <li>
+        <span class="product">
+          <a href="/sub/goods_turntable_info.html"><img src="/img/goods/turntable/turn_24.png" alt="[ENWELL]감성 블루투스 레코드 턴테이블 6 color"></a>
+          [ENWELL]감성 블루투스 레코드 턴테이블 6 color
+        </span>
+        <span class="count">1</span>
+        <span class="cost">22,000</span>
+        <span class="mileage">2,420(1%+10%)</span>
+        <span class="discount">2,200(10%)</span>
+      </li>
+    </ul>
+    <p class="total_order">총 합계 : <span class="pp">33,300</span> 원</p>
+    <form action="#">
+      <ul class="customer_list">
+        <li class="customer_list_top">
+          <span>주문자 정보</span>
+          <small>※ 전체 필수입력입니다</small>
+        </li>
+        <li>
+          <p class="title">아이디</p>
+          <p class="con">
+            <span>suyeonh</span>
+          </p>
+        </li>
+        <li>
+          <p class="title">이름</p>
+          <p class="con">
+            <input type="text" value="한수연" required>
+          </p>
+        </li>
+        <li>
+          <p class="title">전화번호</p>
+          <p class="con">
+            <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4">
+             - <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4">
+              - <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4">
+          </p>
+        </li>
+        <li>
+          <p class="title">핸드폰 번호</p>
+          <p class="con">
+            <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4" required>
+             - <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4" required>
+              - <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4" required>
+          </p>
+        </li>
+        <li>
+          <p class="title">주소</p>
+          <p class="con">
+            <input type="text" id="zipcode" name="zipcode" class="postcodify_postcode5" value="우편번호"  required/>
+            <button id="postcodify_search_button">검색</button>
+            <span class="line3">
+              <input type="text" name="doromyung" class="postcodify_address" value="도로명주소" readonly />
+              <input type="text" name="add_address" class="postcodify_extra_info" value=""  required/>
+            </span>
+            <span class="line4">
+              <input type="text" name="address" class="postcodify_details" value="" placeholder="상세주소"  required/>
+            </span>
+          </p>
+        </li>
+        <li>
+          <p class="title">이메일</p>
+          <p class="con">
+            <input type="text" name="str_email01" id="str_email01" required> @
+            <input type="text" name="str_email02" id="str_email02" disabled value="naver.com" required>
+            <select name="selectEmail" id="selectEmail">
+               <option value="1">직접입력</option>
+               <option value="naver.com" selected>naver.com</option>
+               <option value="hanmail.net">hanmail.net</option>
+               <option value="hotmail.com">hotmail.com</option>
+               <option value="nate.com">nate.com</option>
+               <option value="yahoo.co.kr">yahoo.co.kr</option>
+               <option value="empas.com">empas.com</option>
+               <option value="dreamwiz.com">dreamwiz.com</option>
+               <option value="freechal.com">freechal.com</option>
+               <option value="lycos.co.kr">lycos.co.kr</option>
+               <option value="korea.com">korea.com</option>
+               <option value="gmail.com">gmail.com</option>
+               <option value="hanmir.com">hanmir.com</option>
+               <option value="paran.com">paran.com</option>
+            </select>
+          </p>
+        </li>
+        <li>
+          <p class="title">배송메세지</p>
+          <p class="con">
+            <input type="text" id="delivery_message_write" placeholder="택배기사님께 전달할 사항을 남겨주세요." disabled value="">
+            <select id="delivery_message">
+              <option value="">직접입력</option>
+              <option value="door_front" selected>문 앞에 놔주세요.</option>
+              <option value="please_call">배송 전 연락주세요.</option>
+              <option value="take_care">경비실에 맡겨주세요.</option>
+            </select>
+          </p>
+        </li>
+      </ul>
+      <p class="total_order"><button id="perchase">결제하기</button></p>
+    </form>
+  </div>
+</section>
+<?php include_once('../layout/footer.html'); ?>
